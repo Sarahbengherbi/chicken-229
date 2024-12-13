@@ -1,0 +1,889 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Chicken 229 - L'Expert en Poulet</title>
+  <meta name="description"
+    content="Restaurant de Paris, Bienvenue sur le site de Chicken 229, l'expert en poulet proposant une délicieuse sélection de plats de poulet, de formules et bien plus encore." />
+  <meta name="keywords"
+    content="Restaurant de Paris, paris, poulet, restaurant, cuisine, frites, braisé, accompagnements, sandwichs, desserts, boissons, formules, adresse, contact" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+
+  <meta property="og:title" content="Chicken 229 - Votre spécialiste du poulet" />
+  <meta property="og:description"
+    content="Découvrez notre menu varié de poulet frit, braisé, accompagnements, sandwicherie, desserts et boissons chez Chicken 229 !" />
+  <meta property="og:image" content="URL_de_votre_image" />
+  <meta property="og:url" content="URL_de_votre_page" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- CSS here -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="css/dripicons.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/meanmenu.css">
+  <link rel="stylesheet" href="css/nice-select.css">
+  <link href="css/bootstrap-datepicker.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <style>
+    #cookie-btn {
+      position: fixed;
+      width: 12em;
+      height: 2.5em;
+      bottom: -27px;
+      right: 20px;
+      font-size: 1em;
+      background-color: #00bf63;
+      color: #fff;
+      border: 0px #00bf63 solid;
+      cursor: pointer;
+      border-radius: 4px;
+      z-index: 9999;
+      transition: bottom 0.5s ease-in-out;
+    }
+
+    #cookie-btn:hover {
+      background-color: #fff;
+      color: #00bf63;
+      border: 1px #00bf63 solid;
+      bottom: -3px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- header -->
+  <header class="header-area">
+    <div id="header-sticky" class="menu-area">
+      <div class="container-fluid px-5 ">
+        <div class="second-menu">
+          <div class="row align-items-center">
+            <div class="col-xl-2 col-lg-2">
+              <div class="logo">
+                <a href="index.html"><img src="img/logo/logo-blanc.png" alt="logo"></a>
+              </div>
+            </div>
+
+            <div class="col-xl-10 col-lg-10">
+              <div class="main-menu text-right pr-15">
+                <nav id="mobile-menu">
+                  <ul>
+                    <li class="has-sub" data-aos="fade-left" data-aos-delay="00">
+                      <a href="index.html">Accueil</a>
+                    </li>
+                    <li data-aos="fade-left" data-aos-delay="200">
+                      <a href="a-propos-de-nous.html">À propos</a>
+                    </li>
+                    <li class="has-sub">
+                      <a href="#" onclick="passerMenu('pouletBraise', event)" data-aos="fade-left"
+                        data-aos-delay="300">Menu </a>
+                      <ul>
+                        <li data-aos="fade-left" data-aos-delay="100">
+                          <a href="#" onclick="passerMenu('pouletFrit', event)">Poulet Frit</a>
+                        </li>
+                        <li data-aos="fade-left" data-aos-delay="200">
+                          <a href="#" onclick="passerMenu('pouletBraise', event)">Poulet Braisé</a>
+                        </li>
+                        <li data-aos="fade-left" data-aos-delay="300">
+                          <a href="#" onclick="passerMenu('accompagnements', event)">Accompagnements</a>
+                        </li>
+                        <li data-aos="fade-left" data-aos-delay="400">
+                          <a href="#" onclick="passerMenu('sandwicherie', event)">Sandwicherie</a>
+                        </li>
+                        <li data-aos="fade-left" data-aos-delay="500">
+                          <a href="#" onclick="passerMenu('desserts', event)">Desserts</a>
+                        </li>
+                        <li data-aos="fade-left" data-aos-delay="600">
+                          <a href="#" onclick="passerMenu('boissons', event)">Boissons</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-aos="fade-left" data-aos-delay="400">
+                      <a href="nos-formules.html">Nos formules</a>
+                    </li>
+                    <li data-aos="fade-left" data-aos-delay="500">
+                      <a href="nos-adresses.html">Nos adresses</a>
+                    </li>
+                    <li data-aos="fade-left" class="lastLi" data-aos-delay="600">
+                      <a href="contactez-nous.html" style="color: #00BF63">Contactez-nous</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="mobile-menu"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+  <main>
+    <section class="breadcrumb-area d-flex justify-content-center align-items-center" style="
+    background-image: url(img/bg/test-bg.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  ">
+      <!-- Overlay vert semi-transparent centré avec coins arrondis -->
+      <div style="
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+      height: 60%;
+      background-color: rgba(59, 99, 59, 0.6);
+      border-radius: 10px;
+      z-index: 1;
+    "></div>
+
+      <!-- Conteneur principal pour le texte, positionné au-dessus de l'overlay -->
+      <div class="container" style="z-index: 2; position: relative;">
+        <div class="row">
+          <div class="col-12 text-center">
+            <!-- Conteneur du titre avec effet de flou et léger fond blanc translucide -->
+            <div class="breadcrumb-wrap" style="
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+          ">
+              <!-- Titre principal avec style en majuscules, blanc et espacement des lettres -->
+              <h2 style="
+              font-size: 48px;
+              font-weight: bold;
+              color: #fff;
+              text-transform: uppercase;
+              margin: 0;
+              letter-spacing: 2px;
+            " data-aos="zoom-in">
+                Confidentialités
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-110 mb-110">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-xl-8 col-md-10 col-sm-11">
+            <div class="rte rte--nomargin">
+              <p class="p1">
+                <span class="s1"><b>Politique de confidentialité :</b></span>
+              </p>
+              <p class="p2">
+                <strong><i>Dernière mise à jour : 20/3/2024</i></strong>
+              </p>
+              <p class="p3">
+                Sur cette page, on va parler des « données personnelles »,
+                avant toute chose, nous vous rassurons : nous ne vendons pas
+                vos données !<br /><i></i>
+              </p>
+              <p class="p2">
+                Sur ce document, il est justement expliqué pourquoi et comment
+                sont traitées vos données.
+              </p>
+              <p class="p4">
+                <span class="s1"><b>Définitions<span class="Apple-converted-space">
+                    </span></b></span>
+              </p>
+              <p class="p4">
+                <b>Données personnelles</b> : Toute information qui identifie
+                directement ou indirectement une personne physique. Exemple :
+                nom, prénom, date de naissance, empreinte, photo, voix, numéro
+                de téléphone…<span class="Apple-converted-space"> </span>
+              </p>
+              <p class="p4">
+                <b>Traitement de données</b> : Toute opération visant des
+                données personnelles. Exemple : collecte directe de donnée ou
+                enregistrement, conservation, modification, diffusion de ces
+                données...<span class="Apple-converted-space"> </span>
+              </p>
+              <p class="p4">
+                <b>Responsable de traitement</b> : Désigne la personne qui
+                détermine les finalités et les moyens d’un traitement, c’est à
+                dire l’objectif poursuivi par le traitement. Ici le
+                responsable de traitement est :<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">Sami LOUIBA</p>
+              <p class="p4">SAS au capital de .....€</p>
+              <p class="p4">
+                Adresse du siège social : 229 bis rue Marcadet, 75018, Paris
+                .......
+              </p>
+              <p class="p4">
+                Numéro unique d'identification ........... RCS<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">Numéro de tva : .........</p>
+              <p class="p4">contact@chicken-229.com</p>
+              <p class="p4">Site internet : https://chicken-229.com/</p>
+              <p class="p4"><b>Directeur publication</b> : Mr Sami LOUIBA.</p>
+              <p class="p4">
+                <b>Utilisateur </b>: Désigne toute personne se connectant au
+                site ou l’utilisant.<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                <span class="s1"><b>Traitement de vos données personnelles<span class="Apple-converted-space">
+                    </span></b></span>
+              </p>
+              <p class="p4">
+                <span class="s2" mce-data-marked="1">Sami LOUIBA</span>
+                assure à l'utilisateur une collecte et un traitement
+                d'informations personnelles dans le respect de la vie privée
+                conformément à la loi n°78-17 du 6 janvier 1978 relative à
+                l'informatique, aux fichiers et aux libertés.<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                Ci-après, on vous précise quelles sont les données que nous
+                collectons et dans quel objectif (finalité). Nous vous
+                expliquons aussi sur quel fondement nous nous basons pour le
+                faire (base légale) et enfin nous vous précisons la durée
+                pendant laquelle nous conservons vos données.<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                <b>Quand ?<span class="Apple-converted-space"> </span></b>
+              </p>
+              <p class="p4">
+                Les données personnelles sont collectées lors de :<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                - Passation d’une commande<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                - Création/modification compte client ou espace
+                utilisateur<span class="Apple-converted-space"> </span>
+              </p>
+              <p class="p4">
+                - Règlement d’une commande<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                - Navigation sur le site https://chicken-229.com/ et
+                utilisation des services<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                - Demande d’information ou d’être contacté<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                - Téléchargement d’un contenu gratuit<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                - Interaction (commentaire, avis)<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                <b>Quoi ?<span class="Apple-converted-space"> </span></b>
+              </p>
+              <p class="p4">
+                Les données pouvant être collectées sont :<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                - Données d’identité (nom, prénom, adresse, civilité)<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                - Données de contact (adresse, numéro de téléphone, adresse
+                email)<span class="Apple-converted-space"> </span>
+              </p>
+              <p class="p4">
+                - Données techniques (données de connexions, de navigation,
+                IP, login…) et données relatives au contenu numérique (fichier
+                téléchargé, heure de connexion, temps passé sur les
+                vidéos…)<span class="Apple-converted-space"> </span>
+              </p>
+              <p class="p4">
+                - Données financières (données relatives à la facturation).
+                Les données de carte bancaire ne sont pas stockées, elles sont
+                directement communiquées en mode sécurisé au prestataire de
+                service de paiement.<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                - Données commerciales (historique d’achat, numéro
+                client…)<span class="Apple-converted-space"> </span>
+              </p>
+              <p class="p4">
+                <b>Pourquoi ET combien de temps ?<span class="Apple-converted-space">
+                  </span></b>
+              </p>
+              <p class="p4">
+                Le traitement de donnée répond toujours à une finalité
+                spécifique et repose toujours sur un fondement légal. De plus,
+                les données collectées se limitent à ce qui est pertinent et
+                adéquat au regard des finalités pour lesquelles elles sont
+                traitées. Certaines informations ont un caractère obligatoire,
+                elles seront signalées par un astérisque.<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                <b>Les traitements de données fondés sur la base contractuelle
+                  ou précontractuelle répondent aux finalités suivantes :<span class="Apple-converted-space">
+                  </span></b>
+              </p>
+              <p class="p4">
+                - Gestion et suivie de la relation commerciale (enregistrer et
+                exécuter les commandes)<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                - Traiter les demandes (formulaire de contact, demande
+                d’informations, réclamations…)<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                - Recouvrement des impayés<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                Ces données sont conservées pour toute la durée du contrat +
+                la durée des prescriptions légales qui est de 5 ans en matière
+                civile et commerciale. Concernant la gestion des impayés, la
+                durée est de 5 ans à compter de la fin de la procédure de
+                recouvrement.<span class="Apple-converted-space"> </span>
+              </p>
+              <p class="p4">
+                <b>Les traitements de données fondés sur la base légale de
+                  l’intérêt légitime de </b><span class="s2" mce-data-marked="1"><b>Sami LOUIBA</b></span><b>
+                  répondent aux finalités suivantes :<span class="Apple-converted-space">
+                  </span></b>
+              </p>
+              <p class="p4">
+                - Analyse marketing (données conservées au maximum 3 ans après
+                la fin de la relation commerciale)<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                - Analyse des statistiques commerciales (données conservées au
+                maximum 3 ans après la fin de la relation commerciale)<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                - Améliorer l’expérience utilisateur sur le site
+                https://chicken-229.com/ en utilisant des cookies (données
+                conservées au maximum 13 mois à compter leur collecte)<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                - Prévenir les abus et les fraudes et gérer les contentieux
+                (données conservées pendant toute la durée de la
+                procédure)<span class="Apple-converted-space"> </span>
+              </p>
+              <p class="p4">
+                Les traitements de données fondés sur votre consentement (base
+                légale) répondent aux finalités suivantes :<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                - Newsletter et/ou offre commerciale (données conservées
+                j’jusqu’à ce que vous vous désabonniez ou 3 ans à compter du
+                dernier contact)<span class="Apple-converted-space"> </span>
+              </p>
+              <p class="p4">
+                - Cookies pour lesquels un consentement est requis (données
+                conservées au maximum durant 13 mois)<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                <b>Les traitements de données fondés sur une obligation légale
+                  (base légale) répondent aux finalités suivantes :<span class="Apple-converted-space">
+                  </span></b>
+              </p>
+              <p class="p4">
+                - Gestion de la facturation et de la comptabilité<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                Ces données sont conservées pendant 10 ans.<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                <span class="s1"><b>Sécurité des données<span class="Apple-converted-space">
+                    </span></b></span>
+              </p>
+              <p class="p4">
+                Les données personnelles sont conservées dans des conditions
+                sécurisées, dans le respect des dispositions du Règlement
+                général pour la protection des données et de la législation
+                nationale en vigueur. Nous prenons des mesures adéquates sur
+                le plan de la technique et de l’organisation pour interdire
+                l’accès non autorisé ou la modification, divulgation, perte ou
+                destruction de vos données.<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                Il importe que vous préserviez la confidentialité de vos
+                identifiants de façon à empêcher une utilisation illicite de
+                votre compte.<span class="Apple-converted-space"> </span>
+              </p>
+              <p class="p4">
+                <span class="s1"><b>Transfert des données<span class="Apple-converted-space">
+                    </span></b></span>
+              </p>
+              <p class="p4">
+                Nous ne vendons pas vos données personnelles à un tiers.
+                Cependant, les données personnelles peuvent être partagées
+                avec des sociétés tierces, dans les cas suivants :<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                - fournisseur de service de paiement (base contractuelle)<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                - service de facturation (base contractuelle)<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                - prestataire de transport (base contractuelle)<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                Seules les données strictement nécessaires à l’exécution de la
+                prestation qui leur est confiée leur seront communiquées. En
+                fonction de la localisation des sous-traitants, les données
+                peuvent être transférées en dehors de l’UE. En effet, les
+                données peuvent faire l’objet d’un transfert vers des
+                prestataires établis aux États-Unis, dans le cadre de
+                prestations de services informatiques. Ces derniers ont adhéré
+                aux EU-US Privacy Shield et assurent un niveau de protection
+                adéquat des données (Décision (UE) 2016/1250 du
+                12-7-2016).<span class="Apple-converted-space"> </span>
+              </p>
+              <p class="p4">
+                De façon exceptionnelle, nous pouvons dans le cadre d’une
+                collaboration avec un partenaire commercial lui transmettre
+                vos données, uniquement si vous consentez à cette
+                transmission.<span class="Apple-converted-space"> </span>
+              </p>
+              <p class="p4">
+                <span class="s1"><b>Vos droits<span class="Apple-converted-space"> </span></b></span>
+              </p>
+              <p class="p4">
+                En application de la réglementation applicable aux données à
+                caractère personnel, vous disposez des droits suivants :<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                - vous pouvez mettre à jour ou supprimer les données qui vous
+                concernent<span class="Apple-converted-space"> </span>
+              </p>
+              <p class="p4">
+                - vous pouvez exercer votre droit d'accès, pour connaître les
+                données personnelles vous concernant que nous traitons<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                Dans ce cas, avant la mise en œuvre de ce droit, nous pouvons
+                vous demander une preuve de votre identité afin d'en vérifier
+                l'exactitude ;<span class="Apple-converted-space"> </span>
+              </p>
+              <p class="p4">
+                - si les données à caractère personnel que nous détenons sont
+                inexactes, vous pouvez demander la mise à jour des
+                informations<span class="Apple-converted-space"> </span>
+              </p>
+              <p class="p4">
+                - vous pouvez demander la suppression de vos données à
+                caractère personnel, conformément aux lois applicables en
+                matière de protection des données<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                - vous pouvez définir des directives relatives au sort de vos
+                données à caractère personnel après votre mort en application
+                de l’article 32 de la loi du 6 janvier 1978<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                - vous avez le droit de demander que le traitement de vos
+                données personnelles soit limité. Ainsi, vos données ne
+                pourront qu’être conservées et non plus utilisées<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                - vous disposez également d'un droit à la portabilité et d’un
+                droit à la limitation du traitement de vos données (Consultez
+                le site https://cnil.fr/ pour plus d’informations sur vos
+                droits).<span class="Apple-converted-space"> </span>
+              </p>
+              <p class="p4">
+                Si vous ne souhaitez plus recevoir de publicité de notre part
+                (exercice du droit d’opposition ou retrait d’un consentement
+                déjà donné), contactez-nous à l’adresse suivante :
+                contact@chicken-229.com
+              </p>
+              <div class="Polaris-LegacyStack__Item_yiyol">
+                <div class="Polaris-LegacyCard_l5l93">
+                  <div class="M7OLR">
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+              <p class="p4">
+                Pour exercer ces droits ou pour toute question sur le
+                traitement de vos données dans ce dispositif, vous pouvez nous
+                contacter :<span class="Apple-converted-space"> </span>
+              </p>
+              <p class="p4">
+                · par voie électronique : contact@chicken-229.com
+              </p>
+              <p class="p4">
+                · par courrier postal : 141 RUE CHARLES DE GAULLE 91440
+                BURES-SUR-YVETTE
+              </p>
+              <p class="p4">
+                Si vous estimez, après nous avoir contacté, que vos droits «
+                Informatique et Libertés » ne sont pas respectés, vous pouvez
+                adresser une réclamation en ligne à la CNIL.<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                <span class="s1"><b>Cookies<span class="Apple-converted-space"> </span></b></span>
+              </p>
+              <p class="p4">
+                Lors de votre visite sur le Site https://chicken-229.com/, des
+                cookies sont susceptibles d'être déposés sur votre ordinateur,
+                votre tablette ou smartphone.<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                Un « cookie » est un petit fichier texte qui contient des
+                informations propres à l'utilisateur du Site
+                https://chicken-229.com/. Il est stocké sur le disque dur de
+                l'internaute et peut être lu seulement par le serveur qui l'a
+                fourni.<span class="Apple-converted-space"> </span>
+              </p>
+              <p class="p4">
+                Par exemple, les cookies nous aident à nous souvenir de votre
+                nom d'utilisateur lors de votre prochaine visite, à comprendre
+                vos interactions avec nos contenus et à améliorer ces derniers
+                en fonction des renseignements recueillis.<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                Les informations obtenues par les cookies sont enregistrées
+                sur le serveur qui héberge le site
+                https://chicken-229.com/.<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                <b>La finalité des cookies utilisés<span class="Apple-converted-space">
+                  </span></b>
+              </p>
+              <p class="p4">
+                <span class="s2" mce-data-marked="1">Sami LOUIBA</span> fait
+                un usage limité de « cookies » dans le but de faciliter votre
+                navigation sur le Site https://chicken-229.com/, d'optimiser
+                la consultation du Site https://chicken-229.com/, de réaliser
+                des mesures d'audience. Les cookies sont conservés pour une
+                dure maximale de 13 mois.<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                <b>Cookies exemptés du consentement préalable :<span class="Apple-converted-space">
+                  </span></b>
+              </p>
+              <p class="p4">
+                - Cookies de fonctionnalité : Il s'agit des cookies
+                nécessaires au bon fonctionnement du site (par exemple suivi
+                et enregistrement des comptes client sur le Site
+                https://chicken-229.com/). Sans ces cookies, certains
+                paramétrages du site <span class="s2">x</span> risquent de ne
+                pas fonctionner correctement.<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                - Cookies techniques : ils permettent ou facilitent votre
+                navigation sur le site https://chicken-229.com/.<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                <b>Cookies pour lesquels un consentement est requis :<span class="Apple-converted-space">
+                  </span></b>
+              </p>
+              <p class="p4">
+                - Cookies de performance et de mesure d’audience : ils
+                permettent notamment d’évaluer comment les visiteurs naviguent
+                sur le site https://chicken-229.com/, quel est le nombre de
+                visite, quelles sont les pages les plus visitées etc. Ces
+                données permettent de suivre les performances du site
+                https://chicken-229.com/ afin d'améliorer le site
+                https://chicken-229com/ et de fournir une meilleure expérience
+                utilisateur. (Exemple de cookie : google analytics)<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                - Cookies marketing : ils sont utilisés pour effectuer le
+                suivi des visiteurs au travers des sites web.<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                - Cookies de boutons de partage : Il s’agit de cookies
+                sociaux, ils facilitent les interactions avec vos réseaux
+                sociaux. Nous sommes présents sur Instagram, TikTok, Snapchat,
+                où nous présentons nos services et répondons à vos
+                sollicitations et demandes d’informations. Nous vous rappelons
+                que les fournisseurs de ces réseaux traitent vos données
+                personnelles lorsque vous en faites l’usage. Il vous revient
+                de consulter leur propre politique de confidentialité et de
+                paramétrer les cookies : Pour META :
+                https://www.facebook.com/privacy/explanation / pour Snapchat
+                Politique de confidentialité - Politique de données |
+                Confidentialité Snapchat / pour TikTok Politique de
+                confidentialité | TikTok<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                <b>La gestion des cookies<span class="Apple-converted-space">
+                  </span></b>
+              </p>
+              <p class="p4">
+                À la première session des internautes sur le site
+                https://chicken-229.com/, un bandeau cookies apparaîtra en
+                page d'accueil. Un lien cliquable permet d'en savoir plus sur
+                l'utilité et le fonctionnement des cookies.<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                À tout moment, vous pouvez choisir de désactiver les cookies.
+                Votre navigateur peut également être paramétré pour vous
+                signaler les cookies qui sont déposés dans votre logiciel de
+                navigation et vous demandez de les accepter ou pas.<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                Selon le navigateur, voici des guides pour «
+                activer/désactiver » les cookies : . Google chrome : Activer
+                ou désactiver les cookies - Ordinateur - Aide Compte Google .
+                Safari : Gérer les cookies et les données de sites web dans
+                Safari sur Mac - Assistance Apple (FR) . Internet explorer :
+                Supprimer et gérer les cookies (microsoft.com)<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                Vous pouvez accepter ou refuser les cookies au cas par cas ou
+                bien les refuser systématiquement.<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                Nous rappelons que le paramétrage est susceptible de modifier
+                les conditions d'accès à nos contenus nécessitant
+                l'utilisation de cookies.<span class="Apple-converted-space">
+                </span>
+              </p>
+              <p class="p4">
+                Pour obtenir plus d'information sur les cookies, vous pouvez
+                consulter la page d'information de la CNIL :
+                http://www.cnil.fr/vos-droits/vos-traces/les-cookies/
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <button id="cookie-btn" data-cc="show-preferencesModal">
+    <a href="contactez-nous.html" style="color: #00BF63">Contactez-nous</a>
+  </button>
+  <footer class="footer-bg footer-p" style="
+            background: url(img/bg/footer-bg.png) no-repeat;
+            background-size: cover;
+          ">
+    <div class="footer-top pt-120 pb-30">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+            <div class="footer-widget text-center mb-30">
+              <div class="flog mb-30">
+                <a href="/"><img src="img/logo/logo2.png" alt="logo" data-aos="fade-down" data-aos-delay="400" /></a>
+              </div>
+              <div class="footer-text mb-20">
+                <p data-aos="flip-down" data-aos-delay="400">
+                  On vous garantit un service exemplaire au niveau de vos
+                  attentes car pour nous c'est une passion !
+                </p>
+              </div>
+              <div class="footer-social mt-30">
+                <a href="https://wwww.facebook.com/LeaderDuPoulet" target="_blank" data-aos="fade-right"
+                  data-aos-delay="500"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/_chicken229" target="_blank" data-aos="fade-right"
+                  data-aos-delay="400"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCY2GwIgcQU4u-wayrD9TVXQ" target="_blank" data-aos="fade-right"
+                  data-aos-delay="300"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+            <div class="footer-widget mb-30 text-center">
+              <!--<div class="f-time-icon">
+                                    <img src="img/bg/time-bg.png" alt="logo">
+                                </div>-->
+              <div class="f-widget-title">
+                <span data-aos="fade-down">DISPONIBLE</span>
+                <h5 data-aos="fade-down" data-aos-delay="200" style="font-size: 24px">
+                  Horaires d'ouverture
+                </h5>
+              </div>
+              <div class="footer-link">
+                <div class="f-time">
+                  <ul data-aos="flip-down" data-aos-delay="500">
+                    <li>
+                      <div class="day">
+                        <h4 style="color: #fff">Ouvert 7j/7</h4>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="time">
+                        <h4 style="color: #fff">de 11:00 à 2:00</h4>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="text-center">
+                        <a href="https://maps.app.goo.gl/MMraNLxUXqn2azKx9" style="
+                                  color: #fff;
+                                  display: flex;
+                                  justify-content: center;
+                                  align-items: center;
+                                  font-size: 18px;
+                                " class="mt-10">229 bis rue Marcadet, 75018, Paris</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+            <div class="footer-widget mb-30 text-center">
+              <!--<div class="f-contact-icon">
+                                    <img src="img/bg/f-contact-icon.png" alt="logo">
+                                </div>-->
+              <div class="f-widget-title">
+                <span data-aos="fade-down">CONTACT</span>
+                <h5 data-aos="fade-down" data-aos-delay="200" style="font-size: 24px">
+                  Entrer en contact
+                </h5>
+              </div>
+              <div class="footer-link">
+                <div class="f-contact" data-aos="flip-down" data-aos-delay="500">
+                  <a href="mailto:contact@chicken-229.com" style="
+                            color: #fff;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 18px;
+                          "><span class="fa fa-mail-bulk pr-15"></span>contact@chicken-229.com</a>
+                  <a href="tel:0951502363" style="
+                            color: #46ffa6;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 24px;
+                            margin-top: 10px;
+                          ">
+                    <span style="color: #46ffa6" class="fa fa-phone pr-15"></span>
+                    09 51 50 23 63
+                  </a>
+                  <a href="contactez-nous.html" class="btn ss-btn mt-20" data-aos="flip-down"
+                    data-aos-delay="700">CONTACTEZ-NOUS</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-footer">
+      <div class="row d-flex align-items-center">
+        <div class="col-md-5 col-lg-6">
+          <div class="footer-copyright">
+            <p data-aos="fade-right" data-aos-delay="200">
+              &copy; 2024 Chicken 229. Tous droits réservés.<br /><span style="margin-left: 17px">Réalisé par
+                <strong>Numilex</strong></span>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-7 col-lg-6">
+          <ul class="bottom-footer-list text-right clearfix" data-aos="fade-left" data-aos-delay="200">
+            <li>
+              <p class="first-list-link">
+                <a href="cgv.html">CGV</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="mentions-legales.html">Mentions Légales</a>
+              </p>
+            </li>
+            <li>
+              <p class="last-li">
+                <a href="confidentialite.html">Confidentialité</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS here -->
+  <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+  <script src="js/vendor/jquery-1.12.4.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/one-page-nav-min.js"></script>
+  <script src="js/jquery.meanmenu.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/ajax-form.js"></script>
+  <script src="js/paroller.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/js_isotope.pkgd.min.js"></script>
+  <script src="js/imagesloaded.min.js"></script>
+  <script src="js/parallax.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/jquery.scrollUp.min.js"></script>
+  <script src="js/parallax-scroll.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/element-in-view.js"></script>
+  <script src="js/jquery.nice-select.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script type="module" src="cookieconsent-config.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    function passerMenu(filterParam, event) {
+      event.preventDefault();
+      localStorage.setItem("filterParam", filterParam);
+      window.location.href = "notre-menu.html";
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+# Permet à tous les robots d'exploration d'accéder au site
+User-agent: *
+Allow: /
+
+# Bloque l'accès à certains répertoires et pages
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Disallow: /xmlrpc.php
+Disallow: /api.php
+Disallow: /lequ.php
+Disallow: /action.php
+Disallow: /log_in.php
+Disallow: /404.html
+Disallow: /page-not-found.html
+Disallow: /unauthorized.html
+allow: /
+allow: /a-propos-de-nous.html
+allow: /contactez-nous.html
+allow: /politique-cookie.html
+allow: /mentions-legales.html
+allow: /confidentialite.html
+allow: /nos-formules.html
+allow: /nos-pizzas.html
+allow: /notre-menu.html
+
+# Ajoutez votre sitemap pour aider les moteurs de recherche à comprendre la structure de votre site
+Sitemap: https://chicken-229.com/sitemap.xml

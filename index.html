@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Chicken 229 - L'Expert en Poulet</title>
+  <meta name="description"
+    content="Restaurant de Paris, Bienvenue sur le site de Chicken 229, l'expert en poulet proposant une délicieuse sélection de plats de poulet, de formules et bien plus encore." />
+  <meta name="keywords"
+    content="Restaurant de Paris, paris, poulet, restaurant, cuisine, frites, braisé, accompagnements, sandwichs, desserts, boissons, formules, adresse, contact" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+
+  <meta property="og:title" content="Chicken 229 - Votre spécialiste du poulet" />
+  <meta property="og:description"
+    content="Découvrez notre menu varié de poulet frit, braisé, accompagnements, sandwicherie, desserts et boissons chez Chicken 229 !" />
+  <meta property="og:image" content="URL_de_votre_image" />
+  <meta property="og:url" content="URL_de_votre_page" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- CSS here -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/animate.min.css" />
+  <link rel="stylesheet" href="css/magnific-popup.css" />
+  <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+  <link rel="stylesheet" href="css/dripicons.css" />
+  <link rel="stylesheet" href="css/slick.css" />
+  <link rel="stylesheet" href="css/default.css" />
+  <link rel="stylesheet" href="css/meanmenu.css" />
+  <link rel="stylesheet" href="css/nice-select.css" />
+  <link href="css/bootstrap-datepicker.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<style>
+  #cookie-btn {
+    position: fixed;
+    width: 12em;
+    height: 2.5em;
+    bottom: -27px;
+    right: 20px;
+    font-size: 1em;
+    background-color: #00bf63;
+    color: #fff;
+    border: 0px #4a8569 solid;
+    cursor: pointer;
+    border-radius: 4px;
+    z-index: 9999;
+    transition: bottom 0.5s ease-in-out;
+  }
+
+  #cookie-btn:hover {
+    background-color: #fff;
+    color: #00bf63;
+    border: 1px #00bf63 solid;
+    bottom: -3px;
+  }
+</style>
+
+<body>
+  <!-- header -->
+  <header class="header-area">
+    <div id="header-sticky" class="menu-area">
+      <div class="container-fluid px-5">
+        <div class="second-menu">
+          <div class="row align-items-center">
+            <div class="col-xl-2 col-lg-2">
+              <div class="logo">
+                <a href="index.html"><img src="img/logo/logo-blanc.png" alt="logo" /></a>
+              </div>
+            </div>
+
+            <div class="col-xl-10 col-lg-10">
+              <div class="main-menu text-right pr-15">
+                <nav id="mobile-menu">
+                  <ul>
+                    <li class="has-sub" data-aos="fade-left" data-aos-delay="00">
+                      <a href="index.html" class="activeM">Accueil</a>
+                    </li>
+                    <li data-aos="fade-left" data-aos-delay="200">
+                      <a href="a-propos-de-nous.html">À propos</a>
+                    </li>
+                    <li class="has-sub">
+                      <a href="#" onclick="passerMenu('pouletBraise', event)" data-aos="fade-left"
+                        data-aos-delay="300">Menu </a>
+                      <ul>
+                        <li data-aos="fade-left" data-aos-delay="100">
+                          <a href="#" onclick="passerMenu('pouletFrit', event)">Poulet Frit</a>
+                        </li>
+                        <li data-aos="fade-left" data-aos-delay="200">
+                          <a href="#" onclick="passerMenu('pouletBraise', event)">Poulet Braisé</a>
+                        </li>
+                        <li data-aos="fade-left" data-aos-delay="300">
+                          <a href="#" onclick="passerMenu('accompagnements', event)">Accompagnements</a>
+                        </li>
+                        <li data-aos="fade-left" data-aos-delay="400">
+                          <a href="#" onclick="passerMenu('sandwicherie', event)">Sandwicherie</a>
+                        </li>
+                        <li data-aos="fade-left" data-aos-delay="500">
+                          <a href="#" onclick="passerMenu('desserts', event)">Desserts</a>
+                        </li>
+                        <li data-aos="fade-left" data-aos-delay="600">
+                          <a href="#" onclick="passerMenu('boissons', event)">Boissons</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-aos="fade-left" data-aos-delay="400">
+                      <a href="nos-formules.html">Nos formules</a>
+                    </li>
+                    <li data-aos="fade-left" data-aos-delay="500">
+                      <a href="nos-adresses.html">Nos adresses</a>
+                    </li>
+                    <li data-aos="fade-left" class="lastLi" data-aos-delay="600">
+                      <a href="contactez-nous.html">Contactez-nous</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="mobile-menu"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="container-fluid p-0">
+    <!-- slider-area -->
+    <section id="home" class="slider-area p-relative" style="height: 100vh; position: relative;">
+      <!-- Background Video -->
+      <video autoplay loop muted playsinline class="background-video" style="height: 100vh; width: 100%; object-fit: cover;">
+        <source src="vid/Poulets Chicken 229.mp4" type="video/mp4">
+        <source src="vid/Poulets Chicken 229.webm" type="video/webm">
+      </video>
+    
+      <!-- Overlay Content -->
+      <div style="position: relative; width: 100%; height: 100vh; overflow: hidden;">
+        <!-- Video Background -->
+        <video autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover; z-index: 1;">
+          <source src="your-video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      
+        <!-- Overlay Content -->
+        <div class="overlay-content d-flex align-items-center justify-content-center" 
+             style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.4); z-index: 2">
+             <div class="container">
+              <div class="row align-items-center">
+                <div class="col-xl-7 col-lg-9 col-md-11">
+                  <div class="slider-content s-slider-content ml-1">
+                    <h2 class="large-screen-title" data-animation="fadeInUp" data-delay=".4s">
+                      <span>EXPERT </span> DU POULET
+                    </h2> 
+                    <h3 class="small-screen-title text-white" data-animation="fadeInUp" data-delay=".4s">
+                      <span style="color: #00BF63;">EXPERT </span> <br> DU POULET
+                    </h3>
+                    <p data-animation="fadeInUp" data-delay=".6s" data-aos="fade-right">
+                      Une histoire de savoir faire, de goût et de qualité
+                    </p>
+                    <div class="slider-btn mt-5" data-aos="flip-down" data-aos-delay="800">
+                      <a href="a-propos-de-nous.html" class="btn ss-btn" style="padding: 15px 30px; background-color: #00BF63; color: #fff; border-radius: 30px; text-decoration: none; font-weight: bold;">
+                        Savoir plus
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      
+    </section>
+    
+    
+    
+    
+    <section id="about" class="about-area about-p pt-100 pb-100 p-relative">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Image Section -->
+          <div class="col-lg-4 col-md-12 col-sm-12">
+            <div class="s-about-img p-relative" data-aos="zoom-in" data-aos-delay=".4s">
+              <img src="img/about/about.jpg" alt="img" style="max-height: 350px; width: 100%; object-fit: cover; border-radius: 10px;" />
+            </div>
+          </div>
+          
+          <!-- Content Section -->
+          <div class="col-lg-8 col-md-12 col-sm-12">
+            <div class="about-content s-about-content pr-40">
+              <div class="title-about">
+                <div class="section-title mb-25">
+                  <!-- Subtitle -->
+                  <span data-aos="fade-left" data-aos-duration="800" style="font-size: 20px; color: #ffc107; font-weight: bold;">
+                    Redécouvrez le goût du poulet
+                  </span>
+                  <!-- Main Title -->
+                  <h2 data-aos="fade-left" data-aos-delay=".2s" data-aos-duration="1000" style="font-size: 40px; line-height: 1.2; color: #333;">
+                    UN PETIT COIN GOURMAND À PARIS
+                  </h2>
+                  <!-- Description -->
+                  <p data-aos="fade-left" data-aos-delay=".3s" data-aos-duration="1200" style="font-size: 20px; color: #666;">
+                    Des plats faits avec des ingrédients frais et de première qualité.
+                  </p>
+                </div>
+                
+                <!-- Validation Section -->
+                <div class="year mb-20" data-aos="flip-right" data-aos-delay="400" data-aos-duration="1000">
+                  <div class="text" style="height: 100px">
+                    <h3 class="pt-10">Validé</h3>
+                    <p style="color: #fff">PAR LA STREET</p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Additional Information -->
+              <div class="about-text mb-20 p-3" style="background-color: #f9f9f9; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <p data-aos="fade-left" data-aos-delay=".6s" data-aos-duration="1200" style="font-size: 18px; color: #333; line-height: 1.6; display: flex; align-items: center;">
+                  <span style="color: #ffc107; font-size: 24px; margin-right: 8px;">&#9733;</span> <!-- Star icon -->
+                  Chez Chicken229, nous accordons une importance particulière à l'hygiène et à la propreté.
+                </p>
+                <p data-aos="fade-left" data-aos-delay=".7s" data-aos-duration="1400" style="font-size: 18px; color: #333; line-height: 1.6; display: flex; align-items: center;">
+                  <span style="color: #ffc107; font-size: 24px; margin-right: 8px;">&#9733;</span> <!-- Star icon -->
+                  Notre service est rapide et efficace, sans compromis sur la qualité.
+                </p>
+              </div>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+  </main>
+  
+    <!-- about-area-end -->
+
+    <!-- services-area -->
+    <section id="services" class="services-area services-bg services-two pt-120 pb-90" style="
+          background-image: url(img/bg/features-bg.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center center;
+        ">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-8 col-lg-8">
+            <div class="section-title text-center pl-40 pr-40 mb-75">
+              <span data-aos="fade-down">Un menu riche et varié</span>
+              <h2 data-aos="fade-down">
+                Découvrez toutes les variétés de notre menu
+              </h2>
+              <!--<p class="mt-10"><img src="img/bg/line.png" alt="line" /></p>-->
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-15">
+            <div class="s-single-services text-center active" data-aos="fade-left" data-aos-delay="100">
+              <a href="notre-menu.html" onclick="passerMenu('pouletFrit', event)">
+                <div class="services-icon">
+                  <img src="img/icon/menu/poulet-frit-icone-blanc.svg" alt="img" />
+                </div>
+                <div class="second-services-content">
+                  <h5>Poulet frit</h5>
+                  <!--<p class="pt-10"><img src="img/services/s-line.png" alt="line"></p>
+                                    <p class="pt-20 pb-30">Lorem ipsum dolor sit ut lab.</p>
+                                    <a href="services-detail.html">Read More</a>-->
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-15">
+            <div class="s-single-services text-center" data-aos="fade-left" data-aos-delay="200">
+              <a href="notre-menu.html" onclick="passerMenu('pouletBraise', event)">
+                <div class="services-icon">
+                  <img src="img/icon/menu/poulet-braise-icone-blanc.svg" alt="img" />
+                </div>
+                <div class="second-services-content">
+                  <h5>poulet braisé</h5>
+                  <!--<p class="pt-10"><img src="img/services/s-line.png" alt="line"></p>
+                                    <p class="pt-20 pb-30">Lorem ipsum dolor sit ut lab.</p>
+                                    <a href="services-detail.html">Read More</a>-->
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-15">
+            <div class="s-single-services text-center" data-aos="fade-left" data-aos-delay="300">
+              <a href="notre-menu.html" onclick="passerMenu('accompagnements', event)">
+                <div class="services-icon">
+                  <img src="img/icon/menu/accompagnement-icone-blanc.svg" alt="img" />
+                </div>
+                <div class="second-services-content">
+                  <h5>accompagnements</h5>
+                  <!--<p class="pt-10"><img src="img/services/s-line.png" alt="line"></p>
+                                    <p class="pt-20 pb-30">Lorem ipsum dolor sit ut lab.</p>
+                                    <a href="services-detail.html">Read More</a>-->
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-15">
+            <div class="s-single-services text-center" data-aos="fade-left" data-aos-delay="400">
+              <a href="notre-menu.html" onclick="passerMenu('sandwicherie', event)">
+                <div class="services-icon">
+                  <img src="img/icon/menu/sandwicherie-icone-blanc.svg" alt="img" />
+                </div>
+                <div class="second-services-content">
+                  <h5>sandwicherie</h5>
+                  <!--<p class="pt-10"><img src="img/services/s-line.png" alt="line"></p>
+                                    <p class="pt-20 pb-30">Lorem ipsum dolor sit ut lab.</p>
+                                    <a href="services-detail.html">Read More</a>-->
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- services-area-end -->
+
+    <!-- Meal-area-start -->
+    <section class="meal-select-section pt-100 pb-120">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-8 col-lg-8">
+            <div class="section-title text-center pl-40 pr-40 mb-65">
+              <span data-aos="fade-down"> plats</span>
+              <h2 data-aos="fade-down">MENU PRÉFÉRÉ</h2>
+              <!--<p class="mt-10"><img src="img/bg/line.png" alt="line" /></p>-->
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-lg-12 col-md-12">
+            <div class="populer-meal">
+              <ul>
+                <li data-aos="fade-down" data-aos-delay="200">
+                  <div class="meal-container">
+                    <div class="meal-img">
+                      <img src="img/menu/1.png" alt="img" />
+                    </div>
+                    <div class="meal-content">
+                      <h5>
+                        <a href="notre-menu.html">6 x Tenders maison</a>
+                      </h5>
+                      <!--<p>Hot, Big, Full Plater, Cosmos</p>-->
+                    </div>
+                    <div class="line">
+                      <hr />
+                    </div>
+                    <div class="meal-price">
+                      <a href="notre-menu.html">8.5€</a>
+                      <span>9.50 €</span>
+                    </div>
+                  </div>
+                </li>
+
+                <li data-aos="fade-down" data-aos-delay="200">
+                  <div class="meal-container">
+                    <div class="meal-img">
+                      <img src="img/menu/7.png" alt="img" />
+                    </div>
+                    <div class="meal-content">
+                      <h5>
+                        <a href="notre-menu.html">Poulet entier</a>
+                      </h5>
+                      <!--<p>Hot, Big, Full Plater, Cosmos</p>-->
+                    </div>
+                    <div class="line">
+                      <hr />
+                    </div>
+                    <div class="meal-price">
+                      <a href="notre-menu.html">7.5€</a>
+                      <span>8.90 €</span>
+                    </div>
+                  </div>
+                </li>
+
+                <li data-aos="fade-down" data-aos-delay="200">
+                  <div class="meal-container">
+                    <div class="meal-img">
+                      <img src="img/menu/9.png" alt="img" />
+                    </div>
+                    <div class="meal-content">
+                      <h5>
+                        <a href="notre-menu.html">Blanc de poulet</a>
+                      </h5>
+                      <!--<p>Hot, Big, Full Plater, Cosmos</p>-->
+                    </div>
+                    <div class="line">
+                      <hr />
+                    </div>
+                    <div class="meal-price">
+                      <a href="notre-menu.html">3.5€</a>
+                      <span>4.5€</span>
+                    </div>
+                  </div>
+                </li>
+                <li data-aos="fade-down" data-aos-delay="200">
+                  <div class="meal-container">
+                    <div class="meal-img">
+                      <img src="img/menu/15.png" alt="img" />
+                    </div>
+                    <div class="meal-content">
+                      <h5>
+                        <a href="notre-menu.html">Frites Maison Traditionnelles</a>
+                      </h5>
+                      <!--<p>Hot, Big, Full Plater, Cosmos</p>-->
+                    </div>
+                    <div class="line">
+                      <hr />
+                    </div>
+                    <div class="meal-price">
+                      <a href="notre-menu.html">3.5€</a>
+                      <span>4.80 €</span>
+                    </div>
+                  </div>
+                </li>
+                <li data-aos="fade-down" data-aos-delay="200">
+                  <div class="meal-container">
+                    <div class="meal-img">
+                      <img src="img/menu/21.png" alt="img" />
+                    </div>
+                    <div class="meal-content">
+                      <h5>
+                        <a href="notre-menu.html">Haricots verts</a>
+                      </h5>
+                      <!--<p>Hot, Big, Full Plater, Cosmos</p>-->
+                    </div>
+                    <div class="line">
+                      <hr />
+                    </div>
+                    <div class="meal-price">
+                      <a href="notre-menu.html">3.5€</a>
+                      <span>4.00 €</span>
+                    </div>
+                  </div>
+                </li>
+                <li data-aos="fade-down" data-aos-delay="200">
+                  <div class="meal-container">
+                    <div class="meal-img">
+                      <img src="img/menu/23.png" alt="img" />
+                    </div>
+                    <div class="meal-content">
+                      <h5>
+                        <a href="notre-menu.html">WRAP TENDERS</a>
+                      </h5>
+                      <!--<p>Hot, Big, Full Plater, Cosmos</p>-->
+                    </div>
+                    <div class="line">
+                      <hr />
+                    </div>
+                    <div class="meal-price">
+                      <a href="notre-menu.html">6.90€</a>
+                      <span>7.00 €</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 col-md-12" data-aos="fade-left">
+            <img src="img/meal/banner.png" alt="banner" class="img pr-10 pl-10" />
+            <video autoplay loop muted playsinline>
+              <source src="vid/accueil_pub.mp4" type="video/mp4" />
+              <source src="vid/accueil_pub.webm" type="video/webm" />
+              Votre navigateur ne prend pas en charge la balise vidéo.
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Meal-area-end -->
+
+    <!-- search-area-start -->
+    <section class="booking-select-section pt-120 pb-100" style="
+          background-image: url(img/bg/features-bg.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center center;
+        ">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8 col-md-8">
+            <div class="title-about">
+              <div class="section-title mb-20" data-aos="fade-right" data-aos-delay="200">
+                <span>COMMANDE À EMPORTER</span>
+                <h2>SERVICE RAPIDE</h2>
+                <p style="color: #fff">
+                  Vous pouvez commander directement par téléphone, on se
+                  chargera de préparer votre commande en un temps record.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <div class="booking-select-wrap">
+              <div class="booking-select-area">
+                <form class="clearfix">
+                  <div class="select-sub">
+                    <a href="tel:0951502363" class="btn ss-btn" style="width: fit-content" data-aos="flip-down"
+                      data-aos-delay="500">Appeler: 09 51 50 23 63</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Desserts & Boisons -->
+    <section id="work" class="pt-120 pb-90">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-6 col-lg-8">
+            <div class="section-title text-center mb-60">
+              <span data-aos="fade-down"> Découvrez nos</span>
+              <h2 data-aos="fade-down" data-aos-delay="200">
+                Desserts & Boisons
+              </h2>
+              <!--<p class="mt-10"><img src="img/bg/line.png" alt="line" /></p>-->
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center" id="productGrid">
+          <script>
+            var produits = [
+              {
+                nom_classe: "desserts",
+                chemin_image: "img/menu/27.png",
+                prix: "2.50 €",
+                nom: "Tarte Nutella coco",
+              },
+              {
+                nom_classe: "desserts",
+                chemin_image: "img/menu/28.png",
+                prix: "2.50 €",
+                nom: "Tarte aux daims",
+              },
+              {
+                nom_classe: "desserts",
+                chemin_image: "img/menu/29.png",
+                prix: "2.50 €",
+                nom: "Tiramisu Maison",
+              },
+              {
+                nom_classe: "desserts",
+                chemin_image: "img/menu/30.png",
+                prix: "2.50 €",
+                nom: "Cheesecake Maison",
+              },
+              {
+                nom_classe: "boissons",
+                chemin_image: "img/menu/31.png",
+                prix: "2.00 €",
+                nom: "Cappuccino",
+              },
+              {
+                nom_classe: "boissons",
+                chemin_image: "img/menu/32.png",
+                prix: "2.00 €",
+                nom: "Chocolat",
+              },
+              {
+                nom_classe: "boissons",
+                chemin_image: "img/menu/33.png",
+                prix: "1.60 €",
+                nom: "Café",
+              },
+              {
+                nom_classe: "boissons",
+                chemin_image: "img/menu/34.png",
+                prix: "1.60 €",
+                nom: "Thé",
+              },
+              {
+                nom_classe: "boissons",
+                chemin_image: "img/menu/35.png",
+                prix: "2.50 €",
+                nom: "Coca Cola 1L",
+              },
+              {
+                nom_classe: "boissons",
+                chemin_image: "img/menu/36.png",
+                prix: "1.50 €",
+                nom: "Soda",
+              },
+              {
+                nom_classe: "boissons",
+                chemin_image: "img/menu/37.png",
+                prix: "2.50 €",
+                nom: "Jus de Bissap 33 Cl",
+              },
+              {
+                nom_classe: "boissons",
+                chemin_image: "img/menu/38.png",
+                prix: "2.50 €",
+                nom: "Jus de Gingembre 33 Cl",
+              },
+            ];
+            var grid = document.getElementById("productGrid");
+            var delay = 100;
+            produits.forEach(function (produit) {
+              var gridItem = document.createElement("div");
+              gridItem.classList.add(
+                "col-lg-3",
+                "col-md-4",
+                "col-sm-6",
+                "col-xs-12",
+                produit.nom_classe
+              );
+              gridItem.classList.add("card2");
+
+              var singlePost = document.createElement("div");
+              singlePost.classList.add("single-post", "mb-30");
+              singlePost.classList.add("glow");
+              singlePost.setAttribute("data-aos", "flip-down");
+              singlePost.setAttribute("data-aos-delay", delay);
+              singlePost.setAttribute("data-aos-mirror", true);
+              delay += 100;
+
+              var blogThumb = document.createElement("div");
+              blogThumb.classList.add("blog-thumb");
+              var img = document.createElement("img");
+              img.src = produit.chemin_image;
+              img.alt = "img";
+              blogThumb.appendChild(img);
+
+              var blogContent = document.createElement("div");
+              blogContent.classList.add("blog-content", "text-center");
+              var bCat = document.createElement("div");
+              bCat.classList.add("b-cat");
+              bCat.textContent = produit.prix;
+              var h4 = document.createElement("h4");
+              /*h4.classList.add("pt-30", "mb-20");*/
+              h4.textContent = produit.nom;
+
+              blogContent.appendChild(bCat);
+              blogContent.appendChild(h4);
+
+              singlePost.appendChild(blogThumb);
+              singlePost.appendChild(blogContent);
+
+              gridItem.appendChild(singlePost);
+
+              grid.appendChild(gridItem);
+            });
+            /*document.addEventListener("DOMContentLoaded", function () {
+                  document.getElementById("m").click();
+                });*/
+          </script>
+        </div>
+      </div>
+    </section>
+    <!-- end of Desserts & Boisons -->
+
+    <section id="home" class="slider-area fix p-relative mb-0" style="height: fit-content; margin-top: 20px; height: fit-content;">
+      <div class="video-wrapper">
+        <video autoplay loop muted playsinline class="responsive-video">
+          <source src="vid/1610 Pub Magasin.mp4" type="video/mp4" />
+          <!-- Ajoutez des sources supplémentaires pour une compatibilité avec différents navigateurs -->
+          <!-- <source src="chemin_de_votre_video.webm" type="video/webm"> -->
+          <!-- <source src="chemin_de_votre_video.ogv" type="video/ogg"> -->
+          Votre navigateur ne prend pas en charge la balise vidéo.
+        </video>
+      </div>
+    </section>
+
+    <section
+  class="booking-select-section my-5"
+>
+  <div
+    class="container pb-80 pt-80 d-flex flex-column justify-content-center align-items-center text-center"
+    style="
+      background-color: #e9f5e9;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      width: 95vw;
+      margin: auto;
+    "
+  >
+    <div class="row">
+      <div class="col-12 ">
+        <h2
+          data-aos="flip-down"
+          style="color: #2e7d32; font-size: 36px; font-weight: bold; margin-bottom: 20px;"
+        >
+          Abonnez-vous à CHICKEN 229
+        </h2>
+        <p
+          data-aos="flip-down"
+          data-aos-delay="200"
+          style="color: #388e3c; font-size: 18px; margin-bottom: 30px;"
+        >
+          Abonnez-vous pour recevoir toutes les nouvelles sur nos plats, formules et offres spéciales.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-md-10 col-sm-12 d-flex justify-content-center align-items-center">
+      <form
+        action="https://chicken-229.us18.list-manage.com/subscribe/post?u=85fb491de11a2d6e488d2044c&amp;id=b1e01b1f0f&amp;f_id=00a7c2e1f0"
+        method="post"
+        id="mc-embedded-subscribe-form"
+        name="mc-embedded-subscribe-form"
+        class="validate flex-wrap"
+        target="_blank"
+        style="display: flex; width: 100%; max-width: 700px;" 
+      >
+        <div class="col-md-8 col-sm-12 mb-2">
+          <input
+            type="email"
+            placeholder="Votre email *"
+            name="EMAIL"
+            id="mce-EMAIL"
+            required
+            style="
+              width: 100%;
+              padding: 10px 15px;
+              font-size: 16px;
+              border-radius: 30px;
+              border: 1px solid #c1c1c1;
+              box-shadow: 0px 2px 5px rgba(9, 207, 111, 0.1);
+              outline: none;
+              transition: all 0.3s ease;
+            "
+            data-aos="fade-right"
+            data-aos-delay="100"
+          />
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <button
+            type="submit"
+            name="subscribe"
+            class="btn"
+            style="
+              width: 100%;
+              background-color: #66bb6a;
+              color: #fff;
+              padding: 14px;
+              font-size: 16px;
+              border-radius: 30px;
+              font-weight: bold;
+              box-shadow: 0 4px 6px rgba(38, 206, 97, 0.2);
+              transition: background-color 0.3s ease, transform 0.3s ease;
+            "
+            data-aos="flip-down"
+            data-aos-delay="500"
+            onmouseover="this.style.backgroundColor='#4caf50';this.style.transform='scale(1.05)'"
+            onmouseout="this.style.backgroundColor='#66bb6a';this.style.transform='scale(1)'"
+          >
+            S'abonner
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+    
+  </main>
+  <button id="cookie-btn" data-cc="show-preferencesModal">
+    <a href="contactez-nous.html" style="color: #00BF63">Contactez-nous</a>
+  </button>
+  <!-- main-area-end -->
+  <!-- footer -->
+  <footer class="footer-bg footer-p" style="
+        background: url(img/bg/footer-bg.png) no-repeat;
+        background-size: cover;
+      ">
+    <div class="footer-top pt-120 pb-30">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+            <div class="footer-widget text-center mb-30">
+              <div class="flog mb-30">
+                <a href="/"><img src="img/logo/logo2.png" alt="logo" data-aos="fade-down" data-aos-delay="400" /></a>
+              </div>
+              <div class="footer-text mb-20">
+                <p data-aos="flip-down" data-aos-delay="400">
+                  On vous garantit un service exemplaire au niveau de vos
+                  attentes car pour nous c'est une passion !
+                </p>
+              </div>
+              <div class="footer-social mt-30">
+                <a href="https://wwww.facebook.com/LeaderDuPoulet" target="_blank" data-aos="fade-right"
+                  data-aos-delay="500"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/_chicken229" target="_blank" data-aos="fade-right"
+                  data-aos-delay="400"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCY2GwIgcQU4u-wayrD9TVXQ" target="_blank" data-aos="fade-right"
+                  data-aos-delay="300"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+            <div class="footer-widget mb-30 text-center">
+              <!--<div class="f-time-icon">
+                                  <img src="img/bg/time-bg.png" alt="logo">
+                              </div>-->
+              <div class="f-widget-title">
+                <span data-aos="fade-down">DISPONIBLE</span>
+                <h5 data-aos="fade-down" data-aos-delay="200" style="font-size: 24px">
+                  Horaires d'ouverture
+                </h5>
+              </div>
+              <div class="footer-link">
+                <div class="f-time">
+                  <ul data-aos="flip-down" data-aos-delay="500">
+                    <li>
+                      <div class="day">
+                        <h4 style="color: #fff">Ouvert 7j/7</h4>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="time">
+                        <h4 style="color: #fff">de 11:00 à 2:00</h4>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="text-center">
+                        <a href="https://maps.app.goo.gl/MMraNLxUXqn2azKx9" style="
+                              color: #fff;
+                              display: flex;
+                              justify-content: center;
+                              align-items: center;
+                              font-size: 18px;
+                            " class="mt-10">229 bis rue Marcadet, 75018, Paris</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+            <div class="footer-widget mb-30 text-center">
+              <!--<div class="f-contact-icon">
+                                  <img src="img/bg/f-contact-icon.png" alt="logo">
+                              </div>-->
+              <div class="f-widget-title">
+                <span data-aos="fade-down">CONTACT</span>
+                <h5 data-aos="fade-down" data-aos-delay="200" style="font-size: 24px">
+                  Entrer en contact
+                </h5>
+              </div>
+              <div class="footer-link">
+                <div class="f-contact" data-aos="flip-down" data-aos-delay="500">
+                  <a href="mailto:contact@chicken-229.com" style="
+                        color: #fff;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 18px;
+                      "><span class="fa fa-mail-bulk pr-15"></span>contact@chicken-229.com</a>
+                  <a href="tel:0951502363" style="
+                        color: #46ffa6;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 24px;
+                        margin-top: 10px;
+                      ">
+                    <span style="color: #46ffa6" class="fa fa-phone pr-15"></span>
+
+                    09 51 50 23 63
+                  </a>
+                  <a href="contactez-nous.html" class="btn ss-btn mt-20" data-aos="flip-down"
+                    data-aos-delay="700">CONTACTEZ-NOUS</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-footer">
+      <div class="row d-flex align-items-center">
+        <div class="col-md-5 col-lg-6">
+          <div class="footer-copyright">
+            <p data-aos="fade-right" data-aos-delay="200">
+              &copy; 2024 Chicken 229. Tous droits réservés.<br /><span style="margin-left: 17px">Réalisé par
+                <strong>Numilex</strong></span>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-7 col-lg-6">
+          <ul class="bottom-footer-list text-right clearfix" data-aos="fade-left" data-aos-delay="200">
+            <li>
+              <p class="first-list-link">
+                <a href="cgv.html">CGV</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="mentions-legales.html">Mentions Légales</a>
+              </p>
+            </li>
+            <li>
+              <p class="last-li">
+                <a href="confidentialite.html">Confidentialité</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer-end -->
+
+  <!-- JS here -->
+  <!-- JS here -->
+  <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+  <script src="js/vendor/jquery-1.12.4.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/one-page-nav-min.js"></script>
+  <script src="js/jquery.meanmenu.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/ajax-form.js"></script>
+  <script src="js/paroller.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/js_isotope.pkgd.min.js"></script>
+  <script src="js/imagesloaded.min.js"></script>
+  <script src="js/parallax.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/jquery.scrollUp.min.js"></script>
+  <script src="js/parallax-scroll.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/element-in-view.js"></script>
+  <script src="js/jquery.nice-select.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    function passerMenu(filterParam, event) {
+      event.preventDefault();
+      localStorage.setItem("filterParam", filterParam);
+      window.location.href = "notre-menu.html";
+    }
+    function changeImageOnHover(img, src) {
+      img.src = src;
+    }
+    function changeImageOnClick(img, src) {
+      img.src = src;
+    }
+    $(".button-group").on("click", "button", function () {
+      var filterValue = $(this).attr("data-filter");
+      $("#productGrid > div").hide().filter(filterValue).show();
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,702 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Chicken 229 - L'Expert en Poulet</title>
+  <meta name="description"
+    content="Restaurant de Paris, Bienvenue sur le site de Chicken 229, l'expert en poulet proposant une délicieuse sélection de plats de poulet, de formules et bien plus encore." />
+  <meta name="keywords"
+    content="Restaurant de Paris, paris, poulet, restaurant, cuisine, frites, braisé, accompagnements, sandwichs, desserts, boissons, formules, adresse, contact" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+
+  <meta property="og:title" content="Chicken 229 - Votre spécialiste du poulet" />
+  <meta property="og:description"
+    content="Découvrez notre menu varié de poulet frit, braisé, accompagnements, sandwicherie, desserts et boissons chez Chicken 229 !" />
+  <meta property="og:image" content="URL_de_votre_image" />
+  <meta property="og:url" content="URL_de_votre_page" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- CSS here -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="css/dripicons.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/meanmenu.css">
+  <link rel="stylesheet" href="css/nice-select.css">
+  <link href="css/bootstrap-datepicker.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <style>
+    .error-border {
+      border-color: red !important;
+    }
+
+    .hover-overlay {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .hover-overlay img {
+      transform: scale(1);
+      -ms-transform: scale(1);
+      -webkit-transform: scale(1);
+      -o-transform: scale(1);
+      -moz-transform: scale(1);
+      overflow: hidden;
+      -webkit-transition: transform 400ms;
+      -moz-transition: transform 400ms;
+      -o-transition: transform 400ms;
+      transition: transform 400ms;
+    }
+
+    .blog-post {
+      text-align: center;
+      margin-bottom: 40px;
+      box-shadow: 2px 2px 30px #00000053;
+    }
+
+    .blog-post-txt {
+      padding: 0 8%;
+    }
+
+    .blog-post:hover img {
+      transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      -o-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+    }
+
+    .blog-post {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .blog-post-txt h4 {
+      margin-top: 25px;
+      margin-bottom: 15px;
+    }
+
+    .bg-dark .blog-post-txt a:hover {
+      color: #fff;
+    }
+
+    .blog-post-txt p {
+      font-size: 0.975rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-bottom: 0;
+      padding-bottom: 30px;
+    }
+
+    #cookie-btn {
+      position: fixed;
+      width: 12em;
+      height: 2.5em;
+      bottom: -27px;
+      right: 20px;
+      font-size: 1em;
+      background-color: #00bf63;
+      color: #fff;
+      border: 0px #00bf63 solid;
+      cursor: pointer;
+      border-radius: 4px;
+      z-index: 9999;
+      transition: bottom 0.5s ease-in-out;
+    }
+
+    #cookie-btn:hover {
+      background-color: #fff;
+      color: #00bf63;
+      border: 1px #00bf63 solid;
+      bottom: -3px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- header -->
+  <header class="header-area">
+    <div id="header-sticky" class="menu-area">
+      <div class="container-fluid px-5 ">
+        <div class="second-menu">
+          <div class="row align-items-center">
+            <div class="col-xl-2 col-lg-2">
+              <div class="logo">
+                <a href="index.html"><img src="img/logo/logo-blanc.png" alt="logo"></a>
+              </div>
+            </div>
+
+            <div class="col-xl-10 col-lg-10">
+              <div class="main-menu text-right pr-15">
+                <nav id="mobile-menu">
+                  <ul>
+                    <li class="has-sub" data-aos="fade-left" data-aos-delay="00">
+                      <a href="index.html">Accueil</a>
+                    </li>
+                    <li data-aos="fade-left" data-aos-delay="200">
+                      <a href="a-propos-de-nous.html">À propos</a>
+                    </li>
+                    <li class="has-sub">
+                      <a href="#" onclick="passerMenu('pouletBraise', event)" data-aos="fade-left"
+                        data-aos-delay="300">Menu </a>
+                      <ul>
+                        <li data-aos="fade-left" data-aos-delay="100">
+                          <a href="#" onclick="passerMenu('pouletFrit', event)">Poulet Frit</a>
+                        </li>
+                        <li data-aos="fade-left" data-aos-delay="200">
+                          <a href="#" onclick="passerMenu('pouletBraise', event)">Poulet Braisé</a>
+                        </li>
+                        <li data-aos="fade-left" data-aos-delay="300">
+                          <a href="#" onclick="passerMenu('accompagnements', event)">Accompagnements</a>
+                        </li>
+                        <li data-aos="fade-left" data-aos-delay="400">
+                          <a href="#" onclick="passerMenu('sandwicherie', event)">Sandwicherie</a>
+                        </li>
+                        <li data-aos="fade-left" data-aos-delay="500">
+                          <a href="#" onclick="passerMenu('desserts', event)">Desserts</a>
+                        </li>
+                        <li data-aos="fade-left" data-aos-delay="600">
+                          <a href="#" onclick="passerMenu('boissons', event)">Boissons</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-aos="fade-left" data-aos-delay="400">
+                      <a href="nos-formules.html">Nos formules</a>
+                    </li>
+                    <li data-aos="fade-left" data-aos-delay="500">
+                      <a href="nos-adresses.html" class="activeM">Nos adresses</a>
+                    </li>
+                    <li data-aos="fade-left" class="lastLi" data-aos-delay="600">
+                      <a href="contactez-nous.html">Contactez-nous</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="mobile-menu"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+  <!-- header-end -->
+  <main>
+    <!-- breadcrumb-area -->
+    <section id="home" class="slider-area fix p-relative" style="height: 60svh;">
+      <!-- style="background-image:url(img/bg/test-bg.png)">-->
+      <video class="video-grand d-block" autoplay loop muted playsinline style="width: 100%;
+            height: 100%;
+            object-fit: cover;">
+        <source src="vid/adresses/adresses.mp4" type="video/mp4" />
+        Votre navigateur ne prend pas en charge la balise vidéo.
+      </video>
+      <!-- <video class="video-990" autoplay loop muted playsinline style="width: 100%;
+            height: 100%;
+            object-fit: cover;">
+        <source src="vid/adresses/adresses-tab.mp4" type="video/mp4" />
+        Votre navigateur ne prend pas en charge la balise vidéo.
+      </video>
+      <video class="video-630" autoplay loop muted playsinline style="width: 100%;
+            height: 100%;
+            object-fit: cover;">
+        <source src="vid/adresses/adresses-phone.mp4" type="video/mp4" />
+        Votre navigateur ne prend pas en charge la balise vidéo.
+      </video> -->
+      <!--<div class="container">
+                <div class="row">
+                    <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
+                        <div class="breadcrumb-wrap text-center">
+                            <div class="breadcrumb-title mt-115 mb-30">
+                                <h2>Commandez, Dégustez, Savourez!</h2>
+                            </div>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item active" aria-current="page">Formules</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+      <!--<section
+            class="breadcrumb-area d-flex align-items-center"
+            style="background-image: url(img/bg/adresses.jpg); height: 700px"
+          >
+            <div
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(
+                  to bottom,
+                  rgb(0, 0, 0),
+                  rgba(0, 255, 42, 0.082)
+                );
+              "
+            ></div>
+            <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
+                            <div class="breadcrumb-wrap text-center">
+                                <div class="breadcrumb-title mt-115 mb-30">
+                                    <h2>Nos Adresses</h2>
+                                </div>
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item active" aria-current="page">BIENVENUS</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+    </section>
+    <!-- breadcrumb-area-end -->
+
+    <!-- BLOG-1
+                ============================================= -->
+    <section id="blog-1" class="wide-60 blog-section division pt-120 pb-120">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 offset-lg-1">
+            <div class="section-title mb-60 text-center">
+              <h2 class="h2-xl red-color" data-aos="flip-down" data-aos-delay="200">
+                Découvrez nos adresses
+              </h2>
+              <p class="p-xl" data-aos="flip-down" data-aos-delay="400">
+                Nous sommes ouvert dans trois place déférentes Paris
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="blog-post">
+              <a href="https://www.google.com/maps/place/Chicken+229/@48.8921249,2.3311935,15z/data=!4m6!3m5!1s0x47e66fd612f8e7e3:0x8e5c4caab86a70f3!8m2!3d48.8921249!4d2.3311935!16s%2Fg%2F11vf4ds6mr?entry=ttu"
+                target="_blank" data-aos="flip-down" data-aos-delay="600">
+                <div class="blog-post-img">
+                  <div class="hover-overlay" style="height: 300px">
+                    <img class="img-fluid" src="img/adresses/1.jpg" alt="blog-post-image" />
+                  </div>
+                </div>
+                <div class="blog-post-txt">
+                  <h4 class="h5-lg coffee-color">Paris 18éme</h4>
+                  <p class="grey-color text-black-50">
+                    229 bis rue Marcadet, 75018, Paris
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="blog-post">
+              <a href="#" target="_blank" data-aos="flip-down" data-aos-delay="600">
+                <div class="blog-post-img">
+                  <div class="hover-overlay" style="height: 300px">
+                    <img class="img-fluid" src="img/adresses/2.jpg" alt="blog-post-image" />
+                  </div>
+                </div>
+                <div class="blog-post-txt">
+                  <h4 class="h5-lg coffee-color">Saint-Denis</h4>
+                  <p class="grey-color text-black-50">- Bientôt Ouvert -</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="blog-post">
+              <a href="#" target="_blank" data-aos="flip-down" data-aos-delay="600">
+                <div class="blog-post-img">
+                  <div class="hover-overlay" style="height: 300px">
+                    <img class="img-fluid" src="img/adresses/3.jpg" alt="blog-post-image" />
+                  </div>
+                </div>
+                <div class="blog-post-txt">
+                  <h4 class="h5-lg coffee-color">Asnières-sur-Seine</h4>
+                  <p class="grey-color text-black-50">- Bientôt Ouvert -</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking-select-section pt-120 pb-120" style="
+              background-image: url(img/bg/features-bg.png);
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center center;
+            ">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8 col-md-8">
+            <div class="title-about">
+              <div class="section-title mb-20" data-aos="fade-right" data-aos-delay="200">
+                <span>COMMANDE À EMPORTER</span>
+                <h2>SERVICE RAPIDE</h2>
+                <p style="color: #fff">
+                  Vous pouvez commander directement par téléphone, on se
+                  chargera de préparer votre commande en un temps record.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <div class="booking-select-wrap">
+              <div class="booking-select-area">
+                <form class="clearfix">
+                  <div class="select-sub">
+                    <a href="tel:0951502363" class="btn ss-btn" style="width: fit-content" data-aos="flip-down"
+                      data-aos-delay="500">Appeler: 09 51 50 23 63</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+  class="booking-select-section my-5"
+>
+  <div
+    class="container pb-80 pt-80 d-flex flex-column justify-content-center align-items-center text-center"
+    style="
+      background-color: #e9f5e9;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      width: 95vw;
+      margin: auto;
+    "
+  >
+    <div class="row">
+      <div class="col-12 ">
+        <h2
+          data-aos="flip-down"
+          style="color: #2e7d32; font-size: 36px; font-weight: bold; margin-bottom: 20px;"
+        >
+          Abonnez-vous à CHICKEN 229
+        </h2>
+        <p
+          data-aos="flip-down"
+          data-aos-delay="200"
+          style="color: #388e3c; font-size: 18px; margin-bottom: 30px;"
+        >
+          Abonnez-vous pour recevoir toutes les nouvelles sur nos plats, formules et offres spéciales.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-md-10 col-sm-12 d-flex justify-content-center align-items-center">
+      <form
+        action="https://chicken-229.us18.list-manage.com/subscribe/post?u=85fb491de11a2d6e488d2044c&amp;id=b1e01b1f0f&amp;f_id=00a7c2e1f0"
+        method="post"
+        id="mc-embedded-subscribe-form"
+        name="mc-embedded-subscribe-form"
+        class="validate flex-wrap"
+        target="_blank"
+        style="display: flex; width: 100%; max-width: 700px;" 
+      >
+        <div class="col-md-8 col-sm-12 mb-2">
+          <input
+            type="email"
+            placeholder="Votre email *"
+            name="EMAIL"
+            id="mce-EMAIL"
+            required
+            style="
+              width: 100%;
+              padding: 10px 15px;
+              font-size: 16px;
+              border-radius: 30px;
+              border: 1px solid #c1c1c1;
+              box-shadow: 0px 2px 5px rgba(9, 207, 111, 0.1);
+              outline: none;
+              transition: all 0.3s ease;
+            "
+            data-aos="fade-right"
+            data-aos-delay="100"
+          />
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <button
+            type="submit"
+            name="subscribe"
+            class="btn"
+            style="
+              width: 100%;
+              background-color: #66bb6a;
+              color: #fff;
+              padding: 14px;
+              font-size: 16px;
+              border-radius: 30px;
+              font-weight: bold;
+              box-shadow: 0 4px 6px rgba(38, 206, 97, 0.2);
+              transition: background-color 0.3s ease, transform 0.3s ease;
+            "
+            data-aos="flip-down"
+            data-aos-delay="500"
+            onmouseover="this.style.backgroundColor='#4caf50';this.style.transform='scale(1.05)'"
+            onmouseout="this.style.backgroundColor='#66bb6a';this.style.transform='scale(1)'"
+          >
+            S'abonner
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+  </main>
+  <button id="cookie-btn" data-cc="show-preferencesModal">
+    <a href="contactez-nous.html" style="color: #00BF63">Contactez-nous</a>
+  </button>
+
+  <!-- footer -->
+  <footer class="footer-bg footer-p" style="
+            background: url(img/bg/footer-bg.png) no-repeat;
+            background-size: cover;
+          ">
+    <div class="footer-top pt-120 pb-30">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+            <div class="footer-widget text-center mb-30">
+              <div class="flog mb-30">
+                <a href="/"><img src="img/logo/logo2.png" alt="logo" data-aos="fade-down" data-aos-delay="400" /></a>
+              </div>
+              <div class="footer-text mb-20">
+                <p data-aos="flip-down" data-aos-delay="400">
+                  On vous garantit un service exemplaire au niveau de vos
+                  attentes car pour nous c'est une passion !
+                </p>
+              </div>
+              <div class="footer-social mt-30">
+                <a href="https://wwww.facebook.com/LeaderDuPoulet" target="_blank" data-aos="fade-right"
+                  data-aos-delay="500"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/_chicken229" target="_blank" data-aos="fade-right"
+                  data-aos-delay="400"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCY2GwIgcQU4u-wayrD9TVXQ" target="_blank" data-aos="fade-right"
+                  data-aos-delay="300"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+            <div class="footer-widget mb-30 text-center">
+              <!--<div class="f-time-icon">
+                                    <img src="img/bg/time-bg.png" alt="logo">
+                                </div>-->
+              <div class="f-widget-title">
+                <span data-aos="fade-down">DISPONIBLE</span>
+                <h5 data-aos="fade-down" data-aos-delay="200" style="font-size: 24px">
+                  Horaires d'ouverture
+                </h5>
+              </div>
+              <div class="footer-link">
+                <div class="f-time">
+                  <ul data-aos="flip-down" data-aos-delay="500">
+                    <li>
+                      <div class="day">
+                        <h4 style="color: #fff">Ouvert 7j/7</h4>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="time">
+                        <h4 style="color: #fff">de 11:00 à 2:00</h4>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="text-center">
+                        <a href="https://maps.app.goo.gl/MMraNLxUXqn2azKx9" style="
+                                  color: #fff;
+                                  display: flex;
+                                  justify-content: center;
+                                  align-items: center;
+                                  font-size: 18px;
+                                " class="mt-10">229 bis rue Marcadet, 75018, Paris</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+            <div class="footer-widget mb-30 text-center">
+              <!--<div class="f-contact-icon">
+                                    <img src="img/bg/f-contact-icon.png" alt="logo">
+                                </div>-->
+              <div class="f-widget-title">
+                <span data-aos="fade-down">CONTACT</span>
+                <h5 data-aos="fade-down" data-aos-delay="200" style="font-size: 24px">
+                  Entrer en contact
+                </h5>
+              </div>
+              <div class="footer-link">
+                <div class="f-contact" data-aos="flip-down" data-aos-delay="500">
+                  <a href="mailto:contact@chicken-229.com" style="
+                            color: #fff;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 18px;
+                          "><span class="fa fa-mail-bulk pr-15"></span>contact@chicken-229.com</a>
+                  <a href="tel:0951502363" style="
+                            color: #46ffa6;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 24px;
+                            margin-top: 10px;
+                          ">
+                    <span style="color: #46ffa6" class="fa fa-phone pr-15"></span>
+                    09 51 50 23 63
+                  </a>
+                  <a href="contactez-nous.html" class="btn ss-btn mt-20" data-aos="flip-down"
+                    data-aos-delay="700">CONTACTEZ-NOUS</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-footer">
+      <div class="row d-flex align-items-center">
+        <div class="col-md-5 col-lg-6">
+          <div class="footer-copyright">
+            <p data-aos="fade-right" data-aos-delay="200">
+              &copy; 2024 Chicken 229. Tous droits réservés.<br /><span style="margin-left: 17px">Réalisé par
+                <strong>Numilex</strong></span>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-7 col-lg-6">
+          <ul class="bottom-footer-list text-right clearfix" data-aos="fade-left" data-aos-delay="200">
+            <li>
+              <p class="first-list-link">
+                <a href="cgv.html">CGV</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="mentions-legales.html">Mentions Légales</a>
+              </p>
+            </li>
+            <li>
+              <p class="last-li">
+                <a href="confidentialite.html">Confidentialité</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer-end -->
+
+  <!-- JS here -->
+  <!-- JS here -->
+  <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+  <script src="js/vendor/jquery-1.12.4.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/one-page-nav-min.js"></script>
+  <script src="js/jquery.meanmenu.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/ajax-form.js"></script>
+  <script src="js/paroller.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/js_isotope.pkgd.min.js"></script>
+  <script src="js/imagesloaded.min.js"></script>
+  <script src="js/parallax.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/jquery.scrollUp.min.js"></script>
+  <script src="js/parallax-scroll.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/element-in-view.js"></script>
+  <script src="js/jquery.nice-select.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script type="module" src="cookieconsent-config.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    function passerMenu(filterParam, event) {
+      event.preventDefault();
+      localStorage.setItem("filterParam", filterParam);
+      window.location.href = "notre-menu.html";
+    }
+  </script>
+  <script>
+    toastr.options = {
+      closeButton: true,
+      debug: false,
+      newestOnTop: false,
+      progressBar: true,
+      positionClass: "toast-bottom-left",
+      preventDuplicates: false,
+      onclick: null,
+      showDuration: "300",
+      hideDuration: "1000",
+      timeOut: "5000",
+      extendedTimeOut: "1000",
+      showEasing: "swing",
+      hideEasing: "linear",
+      showMethod: "fadeIn",
+      hideMethod: "fadeOut",
+    };
+    function resetError(field) {
+      $("#" + field + "Error").text("");
+    }
+    $("#email").on("input", function () {
+      if ($(this).val().trim() !== "") {
+        $(this).removeClass("error-border");
+      }
+    });
+
+    function validateForm() {
+      var email = $("#email").val();
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      if (email.trim() === "") {
+        toastr.error("Veuillez remplir votre email");
+        $("#email").addClass("error-border");
+        return;
+      }
+
+      if (!emailRegex.test(email)) {
+        toastr.error("Veuillez saisir une adresse email valide");
+        $("#email").addClass("error-border");
+        return;
+      }
+
+      // Simulation d'un envoi réussi
+      setTimeout(function () {
+        toastr.success("Votre abonnement a été pris en compte avec succès");
+        $("#email").val("").removeClass("error-border");
+      }, 2000);
+
+      // Simulation d'un échec d'envoi
+      // toastr.error('Erreur lors de l\'envoi de l\'email');
+    }
+  </script>
+</body>
+
+</html>

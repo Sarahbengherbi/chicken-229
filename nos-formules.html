@@ -1,0 +1,967 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Chicken 229 - L'Expert en Poulet</title>
+  <meta name="description"
+    content="Restaurant de Paris, Bienvenue sur le site de Chicken 229, l'expert en poulet proposant une délicieuse sélection de plats de poulet, de formules et bien plus encore." />
+  <meta name="keywords"
+    content="Restaurant de Paris, paris, poulet, restaurant, cuisine, frites, braisé, accompagnements, sandwichs, desserts, boissons, formules, adresse, contact" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+
+  <meta property="og:title" content="Chicken 229 - Votre spécialiste du poulet" />
+  <meta property="og:description"
+    content="Découvrez notre menu varié de poulet frit, braisé, accompagnements, sandwicherie, desserts et boissons chez Chicken 229 !" />
+  <meta property="og:image" content="URL_de_votre_image" />
+  <meta property="og:url" content="URL_de_votre_page" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- CSS here -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="css/dripicons.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/meanmenu.css">
+  <link rel="stylesheet" href="css/nice-select.css">
+  <link href="css/bootstrap-datepicker.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <style>
+    .error-border {
+      border-color: red !important;
+    }
+
+    .card1 {
+      overflow: visible;
+      /*width: 370px;*/
+      height: 370px;
+    }
+
+    .content1 {
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      transition: transform 300ms;
+      box-shadow: 0px 0px 10px 1px #000000ee;
+      border-radius: 5px;
+    }
+
+    .front,
+    .back {
+      background-color: #151515;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .back {
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .back .img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .back-cont {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .back-cont .badge {
+      font-size: 1.6em;
+      background-color: #00bf63d4;
+      color: #dddddd;
+      padding: 8px 25px;
+      border-radius: 10px;
+      width: fit-content;
+      text-shadow: 5px 5px 5px #0000005c;
+      box-shadow: 5px 5px 5px #0000005c;
+    }
+
+    .card1:hover .content1 {
+      transform: rotateY(180deg);
+    }
+
+    .card1:hover .description {
+      display: block;
+    }
+
+    @keyframes rotation_481 {
+      0% {
+        transform: rotateZ(0deg);
+      }
+
+      0% {
+        transform: rotateZ(360deg);
+      }
+    }
+
+    .front {
+      transform: rotateY(180deg);
+      color: white;
+    }
+
+    .front .front-content {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .front-content .badge {
+      font-size: 1.6em;
+      background-color: #00000086;
+      padding: 8px 25px;
+      border-radius: 10px;
+      width: fit-content;
+      box-shadow: 5px 5px 5px #0000005c;
+    }
+
+    .description {
+      display: none;
+      box-shadow: 0px 0px 10px 5px #00000088;
+      width: 100%;
+      padding: 10px;
+      background-color: #000000b6;
+      color: #00bf63;
+      border-radius: 5px;
+      box-shadow: 5px 5px 5px #0000005c;
+    }
+
+    @keyframes circle-in-bottom-right {
+      from {
+        clip-path: circle(0%);
+      }
+
+      to {
+        clip-path: circle(150% at bottom right);
+      }
+    }
+
+    [transition-style="in:circle:bottom-right"] {
+      animation: 3s cubic-bezier(0.25, 1, 0.3, 1) circle-in-bottom-right both;
+    }
+
+    .title {
+      font-size: 1.2em;
+      max-width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .title p {
+      width: 50%;
+    }
+
+    .card1-footer {
+      color: #ffffffbe;
+      margin-top: 5px;
+      font-size: 1.2em;
+    }
+
+    .front .img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .circle {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background-color: #ffbb66;
+      position: relative;
+      animation: floating 2600ms infinite linear;
+    }
+
+    #bottom {
+      background-color: #ff8866;
+      left: 50px;
+      top: 0px;
+      width: 150px;
+      height: 150px;
+      animation-delay: -800ms;
+    }
+
+    #right {
+      background-color: #ff2233;
+      left: 160px;
+      top: -80px;
+      width: 30px;
+      height: 30px;
+      animation-delay: -1800ms;
+    }
+
+    @keyframes floating {
+      0% {
+        transform: translateY(0px);
+      }
+
+      50% {
+        transform: translateY(10px);
+      }
+
+      100% {
+        transform: translateY(0px);
+      }
+    }
+
+    #cookie-btn {
+      position: fixed;
+      width: 12em;
+      height: 2.5em;
+      bottom: -27px;
+      right: 20px;
+      font-size: 1em;
+      background-color: #00bf63;
+      color: #fff;
+      border: 0px #00bf63 solid;
+      cursor: pointer;
+      border-radius: 4px;
+      z-index: 9999;
+      transition: bottom 0.5s ease-in-out;
+    }
+
+    #cookie-btn:hover {
+      background-color: #fff;
+      color: #00bf63;
+      border: 1px #00bf63 solid;
+      bottom: -3px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- header -->
+  <header class="header-area">
+    <div id="header-sticky" class="menu-area">
+      <div class="container-fluid px-5 ">
+        <div class="second-menu">
+          <div class="row align-items-center">
+            <div class="col-xl-2 col-lg-2">
+              <div class="logo">
+                <a href="index.html"><img src="img/logo/logo-blanc.png" alt="logo"></a>
+              </div>
+            </div>
+
+            <div class="col-xl-10 col-lg-10">
+              <div class="main-menu text-right pr-15">
+                <nav id="mobile-menu">
+                  <ul>
+                    <li class="has-sub" data-aos="fade-left" data-aos-delay="00">
+                      <a href="index.html">Accueil</a>
+                    </li>
+                    <li data-aos="fade-left" data-aos-delay="200">
+                      <a href="a-propos-de-nous.html">À propos</a>
+                    </li>
+                    <li class="has-sub">
+                      <a href="#" onclick="passerMenu('pouletBraise', event)" data-aos="fade-left"
+                        data-aos-delay="300">Menu </a>
+                      <ul>
+                        <li data-aos="fade-left" data-aos-delay="100">
+                          <a href="#" onclick="passerMenu('pouletFrit', event)">Poulet Frit</a>
+                        </li>
+                        <li data-aos="fade-left" data-aos-delay="200">
+                          <a href="#" onclick="passerMenu('pouletBraise', event)">Poulet Braisé</a>
+                        </li>
+                        <li data-aos="fade-left" data-aos-delay="300">
+                          <a href="#" onclick="passerMenu('accompagnements', event)">Accompagnements</a>
+                        </li>
+                        <li data-aos="fade-left" data-aos-delay="400">
+                          <a href="#" onclick="passerMenu('sandwicherie', event)">Sandwicherie</a>
+                        </li>
+                        <li data-aos="fade-left" data-aos-delay="500">
+                          <a href="#" onclick="passerMenu('desserts', event)">Desserts</a>
+                        </li>
+                        <li data-aos="fade-left" data-aos-delay="600">
+                          <a href="#" onclick="passerMenu('boissons', event)">Boissons</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-aos="fade-left" data-aos-delay="400">
+                      <a href="nos-formules.html" class="activeM">Nos formules</a>
+                    </li>
+                    <li data-aos="fade-left" data-aos-delay="500">
+                      <a href="nos-adresses.html">Nos adresses</a>
+                    </li>
+                    <li data-aos="fade-left" class="lastLi" data-aos-delay="600">
+                      <a href="contactez-nous.html">Contactez-nous</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="mobile-menu"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+  <!-- header-end -->
+  <main>
+    <!-- breadcrumb-area -->
+    <section id="home" class="slider-area fix p-relative" style="height: 60svh;">
+      <!-- style="background-image:url(img/bg/test-bg.png)">-->
+      <video class="video-grand d-block" autoplay loop muted playsinline style="width: 100%;
+            height: 100%;
+            object-fit: cover;">
+        <source src="vid/formules/nos-formules-default.mp4" type="video/mp4" />
+        Votre navigateur ne prend pas en charge la balise vidéo.
+      </video>
+      <!-- <video class="video-990" autoplay loop muted playsinline style="width: 100%;
+            height: 100%;
+            object-fit: cover;">
+        <source src="vid/formules/formules-tab.mp4" type="video/mp4" />
+        Votre navigateur ne prend pas en charge la balise vidéo.
+      </video>
+      <video class="video-630" autoplay loop muted playsinline style="width: 100%;
+            height: 100%;
+            object-fit: cover;">
+        <source src="vid/formules/formules-phone.mp4" type="video/mp4" />
+        Votre navigateur ne prend pas en charge la balise vidéo.
+      </video> -->
+      <!--<div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
+                            <div class="breadcrumb-wrap text-center">
+                                <div class="breadcrumb-title mt-115 mb-30">
+                                    <h2>Commandez, Dégustez, Savourez!</h2>
+                                </div>
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item active" aria-current="page">Formules</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+    </section>
+    <!-- breadcrumb-area-end -->
+
+    <!-- team-area-->
+    <section id="team" class="pt-115 pb-80">
+      <div class="container">
+        <h2 class="text-center" data-aos="flip-down" data-aos-delay="200">NOS FORMULES</h2>
+        <p class="text-center mb-50 pt-30" data-aos="flip-down" data-aos-delay="400">
+          Découvrez nos formules, que nous offrons pour vous :
+        </p>
+        <div class="row justify-content-center align-content-center">
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="single-team mb-30">
+              <div class="card1">
+                <div class="content1" data-aos="fade-right" data-aos-delay="600">
+                  <div class="back">
+                    <img class="img" src="img/formules/1.jpg" alt="img" />
+                    <div class="back-cont">
+                      <h1 class="badge">ÉTUDIANT</h1>
+                      <h2 class="badge align-self-end">5.90 €</h2>
+                    </div>
+                  </div>
+                  <div class="front">
+                    <img class="img" src="img/formules/1.jpg" alt="img" />
+
+                    <div class="front-content">
+                      <h1 class="badge">ÉTUDIANT</h1>
+                      <div class="description" transition-style="in:circle:bottom-right">
+                        <div class="title">
+                          <p class="title">
+                            <strong>5.90 €</strong>
+                          </p>
+                          <svg fill-rule="nonzero" height="15px" width="15px" viewBox="0,0,256,256"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                            <g style="mix-blend-mode: normal" text-anchor="none" font-size="none" font-weight="none"
+                              font-family="none" stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10"
+                              stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="none"
+                              fill-rule="nonzero" fill="#20c997">
+                              <g transform="scale(8,8)">
+                                <path d="M25,27l-9,-6.75l-9,6.75v-23h18z"></path>
+                              </g>
+                            </g>
+                          </svg>
+                        </div>
+                        <p class="card1-footer text-center">
+                          Cuisse / 2 pilons / 2 Saucisses/ 4 ailes / 1
+                          DONUT,<br />Accompagnement, Boisson
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="single-team mb-30">
+              <div class="card1">
+                <div class="content1" data-aos="fade-right" data-aos-delay="500">
+                  <div class="back">
+                    <img class="img" src="img/formules/2.jpg" alt="img" />
+                    <div class="back-cont">
+                      <h1 class="badge">CLASSIQUE</h1>
+                      <h2 class="badge align-self-end">6.00 €</h2>
+                    </div>
+                  </div>
+                  <div class="front">
+                    <img class="img" src="img/formules/2.jpg" alt="img" />
+
+                    <div class="front-content">
+                      <h1 class="badge">CLASSIQUE</h1>
+                      <div class="description" transition-style="in:circle:bottom-right">
+                        <div class="title">
+                          <p class="title">
+                            <strong>6.00 €</strong>
+                          </p>
+                          <svg fill-rule="nonzero" height="15px" width="15px" viewBox="0,0,256,256"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                            <g style="mix-blend-mode: normal" text-anchor="none" font-size="none" font-weight="none"
+                              font-family="none" stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10"
+                              stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="none"
+                              fill-rule="nonzero" fill="#20c997">
+                              <g transform="scale(8,8)">
+                                <path d="M25,27l-9,-6.75l-9,6.75v-23h18z"></path>
+                              </g>
+                            </g>
+                          </svg>
+                        </div>
+                        <p class="card1-footer text-center">
+                          Cuisse / 3 pilons / 2 Saucisses/ 4 ailes / 1
+                          DONUT,<br />
+                          Accompagnement, Boisson
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="single-team mb-30">
+              <div class="card1">
+                <div class="content1" data-aos="fade-right" data-aos-delay="400">
+                  <div class="back">
+                    <img class="img" src="img/formules/3.jpg" alt="img" />
+                    <div class="back-cont">
+                      <h1 class="badge">SPORT</h1>
+                      <h2 class="badge align-self-end">7.00 €</h2>
+                    </div>
+                  </div>
+                  <div class="front">
+                    <img class="img" src="img/formules/3.jpg" alt="img" />
+
+                    <div class="front-content">
+                      <h1 class="badge">SPORT</h1>
+                      <div class="description" transition-style="in:circle:bottom-right">
+                        <div class="title">
+                          <p class="title">
+                            <strong>7.00 €</strong>
+                          </p>
+                          <svg fill-rule="nonzero" height="15px" width="15px" viewBox="0,0,256,256"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                            <g style="mix-blend-mode: normal" text-anchor="none" font-size="none" font-weight="none"
+                              font-family="none" stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10"
+                              stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="none"
+                              fill-rule="nonzero" fill="#20c997">
+                              <g transform="scale(8,8)">
+                                <path d="M25,27l-9,-6.75l-9,6.75v-23h18z"></path>
+                              </g>
+                            </g>
+                          </svg>
+                        </div>
+                        <p class="card1-footer text-center">
+                          Blanc de poulet,<br />
+                          Accompagnement, Boisson
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="single-team mb-30">
+              <div class="card1">
+                <div class="content1" data-aos="fade-right" data-aos-delay="300">
+                  <div class="back">
+                    <img class="img" src="img/formules/4.jpg" alt="img" />
+                    <div class="back-cont">
+                      <h1 class="badge">TENDERS</h1>
+                      <h2 class="badge align-self-end">7.00 €</h2>
+                    </div>
+                  </div>
+                  <div class="front">
+                    <img class="img" src="img/formules/4.jpg" alt="img" />
+
+                    <div class="front-content">
+                      <h1 class="badge">TENDERS</h1>
+                      <div class="description" transition-style="in:circle:bottom-right">
+                        <div class="title">
+                          <p class="title">
+                            <strong>7.00 €</strong>
+                          </p>
+                          <svg fill-rule="nonzero" height="15px" width="15px" viewBox="0,0,256,256"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                            <g style="mix-blend-mode: normal" text-anchor="none" font-size="none" font-weight="none"
+                              font-family="none" stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10"
+                              stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="none"
+                              fill-rule="nonzero" fill="#20c997">
+                              <g transform="scale(8,8)">
+                                <path d="M25,27l-9,-6.75l-9,6.75v-23h18z"></path>
+                              </g>
+                            </g>
+                          </svg>
+                        </div>
+                        <p class="card1-footer text-center">
+                          2 Tenders maison,<br />
+                          Accompagnement, Boisson
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="single-team mb-30">
+              <div class="card1">
+                <div class="content1" data-aos="fade-right" data-aos-delay="200">
+                  <div class="back">
+                    <img class="img" src="img/formules/5.jpg" alt="img" />
+                    <div class="back-cont">
+                      <h1 class="badge">DEMI</h1>
+                      <h2 class="badge align-self-end">7.50 €</h2>
+                    </div>
+                  </div>
+                  <div class="front">
+                    <img class="img" src="img/formules/5.jpg" alt="img" />
+
+                    <div class="front-content">
+                      <h1 class="badge">DEMI</h1>
+                      <div class="description" transition-style="in:circle:bottom-right">
+                        <div class="title">
+                          <p class="title">
+                            <strong>7.50 €</strong>
+                          </p>
+                          <svg fill-rule="nonzero" height="15px" width="15px" viewBox="0,0,256,256"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                            <g style="mix-blend-mode: normal" text-anchor="none" font-size="none" font-weight="none"
+                              font-family="none" stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10"
+                              stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="none"
+                              fill-rule="nonzero" fill="#20c997">
+                              <g transform="scale(8,8)">
+                                <path d="M25,27l-9,-6.75l-9,6.75v-23h18z"></path>
+                              </g>
+                            </g>
+                          </svg>
+                        </div>
+                        <p class="card1-footer text-center">
+                          Demi-poulet,<br />
+                          Accompagnement, Boisson
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking-select-section pt-120 pb-100" style="
+              background-image: url(img/bg/features-bg.png);
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center center;
+            ">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8 col-md-8">
+            <div class="title-about">
+              <div class="section-title mb-20" data-aos="fade-right" data-aos-delay="200">
+                <span>COMMANDE À EMPORTER</span>
+                <h2>SERVICE RAPIDE</h2>
+                <p style="color: #fff">
+                  Vous pouvez commander directement par téléphone, on se
+                  chargera de préparer votre commande en un temps record.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <div class="booking-select-wrap">
+              <div class="booking-select-area">
+                <form class="clearfix">
+                  <div class="select-sub">
+                    <a href="tel:0951502363" class="btn ss-btn" style="width: fit-content" data-aos="flip-down"
+                      data-aos-delay="500">Appeler: 09 51 50 23 63</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+  class="booking-select-section my-5"
+>
+  <div
+    class="container pb-80 pt-80 d-flex flex-column justify-content-center align-items-center text-center"
+    style="
+      background-color: #e9f5e9;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      width: 95vw;
+      margin: auto;
+    "
+  >
+    <div class="row">
+      <div class="col-12 ">
+        <h2
+          data-aos="flip-down"
+          style="color: #2e7d32; font-size: 36px; font-weight: bold; margin-bottom: 20px;"
+        >
+          Abonnez-vous à CHICKEN 229
+        </h2>
+        <p
+          data-aos="flip-down"
+          data-aos-delay="200"
+          style="color: #388e3c; font-size: 18px; margin-bottom: 30px;"
+        >
+          Abonnez-vous pour recevoir toutes les nouvelles sur nos plats, formules et offres spéciales.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-md-10 col-sm-12 d-flex justify-content-center align-items-center">
+      <form
+        action="https://chicken-229.us18.list-manage.com/subscribe/post?u=85fb491de11a2d6e488d2044c&amp;id=b1e01b1f0f&amp;f_id=00a7c2e1f0"
+        method="post"
+        id="mc-embedded-subscribe-form"
+        name="mc-embedded-subscribe-form"
+        class="validate flex-wrap"
+        target="_blank"
+        style="display: flex; width: 100%; max-width: 700px;" 
+      >
+        <div class="col-md-8 col-sm-12 mb-2">
+          <input
+            type="email"
+            placeholder="Votre email *"
+            name="EMAIL"
+            id="mce-EMAIL"
+            required
+            style="
+              width: 100%;
+              padding: 10px 15px;
+              font-size: 16px;
+              border-radius: 30px;
+              border: 1px solid #c1c1c1;
+              box-shadow: 0px 2px 5px rgba(9, 207, 111, 0.1);
+              outline: none;
+              transition: all 0.3s ease;
+            "
+            data-aos="fade-right"
+            data-aos-delay="100"
+          />
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <button
+            type="submit"
+            name="subscribe"
+            class="btn"
+            style="
+              width: 100%;
+              background-color: #66bb6a;
+              color: #fff;
+              padding: 14px;
+              font-size: 16px;
+              border-radius: 30px;
+              font-weight: bold;
+              box-shadow: 0 4px 6px rgba(38, 206, 97, 0.2);
+              transition: background-color 0.3s ease, transform 0.3s ease;
+            "
+            data-aos="flip-down"
+            data-aos-delay="500"
+            onmouseover="this.style.backgroundColor='#4caf50';this.style.transform='scale(1.05)'"
+            onmouseout="this.style.backgroundColor='#66bb6a';this.style.transform='scale(1)'"
+          >
+            S'abonner
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+  </main>
+  <button id="cookie-btn" data-cc="show-preferencesModal">
+    <a href="contactez-nous.html" style="color: #00BF63">Contactez-nous</a>
+  </button>
+  <footer class="footer-bg footer-p" style="
+            background: url(img/bg/footer-bg.png) no-repeat;
+            background-size: cover;
+          ">
+    <div class="footer-top pt-120 pb-30">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+            <div class="footer-widget text-center mb-30">
+              <div class="flog mb-30">
+                <a href="/"><img src="img/logo/logo2.png" alt="logo" data-aos="fade-down" data-aos-delay="400" /></a>
+              </div>
+              <div class="footer-text mb-20">
+                <p data-aos="flip-down" data-aos-delay="400">
+                  On vous garantit un service exemplaire au niveau de vos
+                  attentes car pour nous c'est une passion !
+                </p>
+              </div>
+              <div class="footer-social mt-30">
+                <a href="https://wwww.facebook.com/LeaderDuPoulet" target="_blank" data-aos="fade-right"
+                  data-aos-delay="500"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/_chicken229" target="_blank" data-aos="fade-right"
+                  data-aos-delay="400"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCY2GwIgcQU4u-wayrD9TVXQ" target="_blank" data-aos="fade-right"
+                  data-aos-delay="300"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+            <div class="footer-widget mb-30 text-center">
+              <!--<div class="f-time-icon">
+                                    <img src="img/bg/time-bg.png" alt="logo">
+                                </div>-->
+              <div class="f-widget-title">
+                <span data-aos="fade-down">DISPONIBLE</span>
+                <h5 data-aos="fade-down" data-aos-delay="200" style="font-size: 24px">
+                  Horaires d'ouverture
+                </h5>
+              </div>
+              <div class="footer-link">
+                <div class="f-time">
+                  <ul data-aos="flip-down" data-aos-delay="500">
+                    <li>
+                      <div class="day">
+                        <h4 style="color: #fff">Ouvert 7j/7</h4>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="time">
+                        <h4 style="color: #fff">de 11:00 à 2:00</h4>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="text-center">
+                        <a href="https://maps.app.goo.gl/MMraNLxUXqn2azKx9" style="
+                                  color: #fff;
+                                  display: flex;
+                                  justify-content: center;
+                                  align-items: center;
+                                  font-size: 18px;
+                                " class="mt-10">229 bis rue Marcadet, 75018, Paris</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+            <div class="footer-widget mb-30 text-center">
+              <!--<div class="f-contact-icon">
+                                    <img src="img/bg/f-contact-icon.png" alt="logo">
+                                </div>-->
+              <div class="f-widget-title">
+                <span data-aos="fade-down">CONTACT</span>
+                <h5 data-aos="fade-down" data-aos-delay="200" style="font-size: 24px">
+                  Entrer en contact
+                </h5>
+              </div>
+              <div class="footer-link">
+                <div class="f-contact" data-aos="flip-down" data-aos-delay="500">
+                  <a href="mailto:contact@chicken-229.com" style="
+                            color: #fff;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 18px;
+                          "><span class="fa fa-mail-bulk pr-15"></span>contact@chicken-229.com</a>
+                  <a href="tel:0951502363" style="
+                            color: #46ffa6;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 24px;
+                            margin-top: 10px;
+                          ">
+                    <span style="color: #46ffa6" class="fa fa-phone pr-15"></span>
+                    09 51 50 23 63
+                  </a>
+                  <a href="contactez-nous.html" class="btn ss-btn mt-20" data-aos="flip-down"
+                    data-aos-delay="700">CONTACTEZ-NOUS</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-footer">
+      <div class="row d-flex align-items-center">
+        <div class="col-md-5 col-lg-6">
+          <div class="footer-copyright">
+            <p data-aos="fade-right" data-aos-delay="200">
+              &copy; 2024 Chicken 229. Tous droits réservés.<br /><span style="margin-left: 17px">Réalisé par
+                <strong>Numilex</strong></span>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-7 col-lg-6">
+          <ul class="bottom-footer-list text-right clearfix" data-aos="fade-left" data-aos-delay="200">
+            <li>
+              <p class="first-list-link">
+                <a href="cgv.html">CGV</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="mentions-legales.html">Mentions Légales</a>
+              </p>
+            </li>
+            <li>
+              <p class="last-li">
+                <a href="confidentialite.html">Confidentialité</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS here -->
+  <!-- JS here -->
+  <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+  <script src="js/vendor/jquery-1.12.4.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/one-page-nav-min.js"></script>
+  <script src="js/jquery.meanmenu.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/ajax-form.js"></script>
+  <script src="js/paroller.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/js_isotope.pkgd.min.js"></script>
+  <script src="js/imagesloaded.min.js"></script>
+  <script src="js/parallax.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/jquery.scrollUp.min.js"></script>
+  <script src="js/parallax-scroll.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/element-in-view.js"></script>
+  <script src="js/jquery.nice-select.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script type="module" src="cookieconsent-config.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    function passerMenu(filterParam, event) {
+      event.preventDefault();
+      localStorage.setItem("filterParam", filterParam);
+      window.location.href = "notre-menu.html";
+    }
+  </script>
+  <script>
+    toastr.options = {
+      closeButton: true,
+      debug: false,
+      newestOnTop: false,
+      progressBar: true,
+      positionClass: "toast-bottom-left",
+      preventDuplicates: false,
+      onclick: null,
+      showDuration: "300",
+      hideDuration: "1000",
+      timeOut: "5000",
+      extendedTimeOut: "1000",
+      showEasing: "swing",
+      hideEasing: "linear",
+      showMethod: "fadeIn",
+      hideMethod: "fadeOut",
+    };
+    function resetError(field) {
+      $("#" + field + "Error").text("");
+    }
+    $("#email").on("input", function () {
+      if ($(this).val().trim() !== "") {
+        $(this).removeClass("error-border");
+      }
+    });
+
+    function validateForm() {
+      var email = $("#email").val();
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      if (email.trim() === "") {
+        toastr.error("Veuillez remplir votre email");
+        $("#email").addClass("error-border");
+        return;
+      }
+
+      if (!emailRegex.test(email)) {
+        toastr.error("Veuillez saisir une adresse email valide");
+        $("#email").addClass("error-border");
+        return;
+      }
+
+      // Simulation d'un envoi réussi
+      setTimeout(function () {
+        toastr.success("Votre abonnement a été pris en compte avec succès");
+        $("#email").val("").removeClass("error-border");
+      }, 2000);
+
+      // Simulation d'un échec d'envoi
+      // toastr.error('Erreur lors de l\'envoi de l\'email');
+    }
+  </script>
+</body>
+
+</html>
